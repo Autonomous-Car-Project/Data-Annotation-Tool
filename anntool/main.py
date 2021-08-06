@@ -1,7 +1,7 @@
 import sys
-from PySide6 import QtCore
-from PySide6.QtGui import QColor
-from PySide6.QtWidgets import QMainWindow, QGraphicsDropShadowEffect, QApplication
+from PyQt5 import QtCore
+from PyQt5.QtGui import QColor
+from PyQt5.QtWidgets import QMainWindow, QGraphicsDropShadowEffect, QApplication
 
 from ui_splash import Ui_SplashScreen
 

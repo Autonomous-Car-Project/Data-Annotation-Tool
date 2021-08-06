@@ -1,4 +1,4 @@
-from PySide6 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_SplashScreen(object):
     def setupUi(self, MainWindow):

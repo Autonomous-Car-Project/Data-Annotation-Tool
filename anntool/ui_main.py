@@ -1,4 +1,4 @@
-from PySide6 import QtCore, QtWidgets
+from PyQt5 import QtCore, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

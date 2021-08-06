@@ -32,7 +32,7 @@ setup(
     keywords='tivra ai data annotation cc india tivraai data-annotation-tool self-driving autonomous',
     packages=find_packages(exclude=["docs"]),
     install_requires=[
-        'pyside6', 
+        'PyQt5', 
     ],
     entry_points={
         'console_scripts' : [

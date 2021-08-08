@@ -9,7 +9,7 @@ To run this software, follow the steps:
 ```bash
 git clone https://github.com/Autonomous-Car-Project/Data-Annotation-Tool.git
 cd Data-Annotation-Tool
-python setup.py install 
+pip install -r requirements.txt
 python anntool/main.py
 
 ```

@@ -1,3 +1,4 @@
+![banner](assets/Banner.gif)
 # Data-Annotation-Tool
 
 ![Splash](assets/splash.png)

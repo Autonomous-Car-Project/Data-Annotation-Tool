@@ -1,0 +1,41 @@
+<RCC>
+  <qresource prefix="img">
+    <file>Images/00_Logo.png</file>
+    <file>Images/01_adjust_0.png</file>
+    <file>Images/01_adjust_1.png</file>
+    <file>Images/01_globe_0.png</file>
+    <file>Images/01_globe_1.png</file>
+    <file>Images/01_location_0.png</file>
+    <file>Images/01_location_1.png</file>
+    <file>Images/01_revert_0.png</file>
+    <file>Images/01_revert_1.png</file>
+    <file>Images/01_spiral_0.png</file>
+    <file>Images/01_spiral_1.png</file>
+    <file>Images/03_github.png</file>
+    <file>Images/04_path_0.png</file>
+    <file>Images/04_path_1.png</file>
+    <file>Images/05_tracker.png</file>
+    <file>Images/06_img1.png</file>
+    <file>Images/06_img2.jpeg</file>
+    <file>Images/06_img3.jpeg</file>
+    <file>Images/06_img4.jpeg</file>
+    <file>Images/06_img5.jpeg</file>
+    <file>Images/07_next_img.png</file>
+    <file>Images/08_wifi.png</file>
+    <file>Images/09_draw.png</file>
+    <file>Images/09_point.png</file>
+    <file>Images/09_redo.png</file>
+    <file>Images/09_undo.png</file>
+    <file>Images/09_zoomin.png</file>
+    <file>Images/09_zoomout.png</file>
+    <file>Images/10_uparrow.png</file>
+    <file>Images/11_blue.png</file>
+    <file>Images/11_green.png</file>
+    <file>Images/11_orange.png</file>
+    <file>Images/11_purple.png</file>
+    <file>Images/11_red.png</file>
+    <file>Images/11_yellow.png</file>
+    <file>Images/12_dropdown_0.png</file>
+    <file>Images/12_dropdown_1.png</file>
+  </qresource>
+</RCC>

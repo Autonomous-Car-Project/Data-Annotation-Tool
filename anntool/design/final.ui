@@ -33,12 +33,12 @@
      <number>0</number>
     </property>
     <item>
-     <widget class="QWidget" name="widget_2" native="true">
+     <widget class="QWidget" name="background_widget" native="true">
       <property name="styleSheet">
        <string notr="true">background: #2F2F2F;
 border-radius: 23px;</string>
       </property>
-      <widget class="QWidget" name="widget_3" native="true">
+      <widget class="QWidget" name="logo_widget" native="true">
        <property name="geometry">
         <rect>
          <x>22</x>
@@ -52,7 +52,7 @@ border-radius: 23px;</string>
 background-color:rgba(255,255,255,0);</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="img0_button">
        <property name="geometry">
         <rect>
          <x>162</x>
@@ -83,7 +83,7 @@ QPushButton:pressed{
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="imgFrame0_button">
        <property name="geometry">
         <rect>
          <x>162</x>
@@ -111,7 +111,7 @@ QPushButton:pressed{
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="img1_button">
        <property name="geometry">
         <rect>
          <x>390</x>
@@ -141,7 +141,7 @@ QPushButton:pressed{
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_17">
+      <widget class="QPushButton" name="imgFrame1_button">
        <property name="geometry">
         <rect>
          <x>390</x>
@@ -169,7 +169,7 @@ QPushButton:pressed{
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_18">
+      <widget class="QPushButton" name="imgFrame2_button">
        <property name="geometry">
         <rect>
          <x>619</x>
@@ -197,7 +197,7 @@ QPushButton:pressed{
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_19">
+      <widget class="QPushButton" name="img2_button">
        <property name="geometry">
         <rect>
          <x>619</x>
@@ -261,7 +261,7 @@ color:rgba(255,255,255,255);</string>
         </time>
        </property>
       </widget>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="date_label">
        <property name="geometry">
         <rect>
          <x>1247</x>
@@ -287,7 +287,7 @@ color:rgba(255,255,255,255);
         <string>  14th August, 2021</string>
        </property>
       </widget>
-      <widget class="QWidget" name="widget_5" native="true">
+      <widget class="QWidget" name="imgPreview_widget" native="true">
        <property name="geometry">
         <rect>
          <x>205</x>
@@ -308,7 +308,7 @@ border:none;
 </string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_23">
+      <widget class="QPushButton" name="arrowNextImg_button">
        <property name="geometry">
         <rect>
          <x>857</x>
@@ -358,7 +358,7 @@ QPushButton:pressed {
         </size>
        </property>
       </widget>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="nextImg_label">
        <property name="geometry">
         <rect>
          <x>140</x>
@@ -383,7 +383,7 @@ background-color:none;
         <string>NEXT IMAGES</string>
        </property>
       </widget>
-      <widget class="QWidget" name="widget_6" native="true">
+      <widget class="QWidget" name="currentLogCoordinates_widget" native="true">
        <property name="geometry">
         <rect>
          <x>982</x>
@@ -396,7 +396,7 @@ background-color:none;
         <string notr="true">background-color:#737373;
 border-radius:10px;</string>
        </property>
-       <widget class="QTextEdit" name="textEdit_4">
+       <widget class="QTextEdit" name="coordinates2_textEdit">
         <property name="geometry">
          <rect>
           <x>215</x>
@@ -426,7 +426,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#ff0000;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt; 6   25  97  120  158&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
-       <widget class="QTextEdit" name="textEdit_3">
+       <widget class="QTextEdit" name="coordinates1_textEdit">
         <property name="geometry">
          <rect>
           <x>22</x>
@@ -458,7 +458,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </widget>
-      <widget class="QPushButton" name="pushButton_20">
+      <widget class="QPushButton" name="nextImg_button">
        <property name="geometry">
         <rect>
          <x>870</x>
@@ -496,7 +496,7 @@ QPushButton:pressed{
         <string>+</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_21">
+      <widget class="QPushButton" name="prevImg_button">
        <property name="geometry">
         <rect>
          <x>116</x>
@@ -533,7 +533,7 @@ QPushButton:pressed{
         <string>-</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_3">
+      <widget class="QLabel" name="saveInfo_label">
        <property name="geometry">
         <rect>
          <x>974</x>
@@ -557,7 +557,7 @@ border-left: 7px solid #3225CC;</string>
         <string>   abcdefgh.txt saved successfully!</string>
        </property>
       </widget>
-      <widget class="QWidget" name="widget_7" native="true">
+      <widget class="QWidget" name="slider_widget" native="true">
        <property name="geometry">
         <rect>
          <x>97</x>
@@ -569,7 +569,7 @@ border-left: 7px solid #3225CC;</string>
        <property name="styleSheet">
         <string notr="true">background-color: #2F2F2F;</string>
        </property>
-       <widget class="QWidget" name="widget_8" native="true">
+       <widget class="QWidget" name="aboutUsSlider_widget" native="true">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -582,7 +582,7 @@ border-left: 7px solid #3225CC;</string>
          <string notr="true">background-color: #0083FF;</string>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_9" native="true">
+       <widget class="QWidget" name="revertSlider_widget" native="true">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -595,7 +595,7 @@ border-left: 7px solid #3225CC;</string>
          <string notr="true">background-color: #0083FF;</string>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_10" native="true">
+       <widget class="QWidget" name="explorerSlider_widget" native="true">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -608,7 +608,7 @@ border-left: 7px solid #3225CC;</string>
          <string notr="true">background-color: #0083FF;</string>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_11" native="true">
+       <widget class="QWidget" name="helpSlider_widget" native="true">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -621,7 +621,7 @@ border-left: 7px solid #3225CC;</string>
          <string notr="true">background-color: #0083FF;</string>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_12" native="true">
+       <widget class="QWidget" name="adjustSlider_widget" native="true">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -635,7 +635,7 @@ border-left: 7px solid #3225CC;</string>
         </property>
        </widget>
       </widget>
-      <widget class="QPushButton" name="pushButton_22">
+      <widget class="QPushButton" name="adjust_button">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -668,7 +668,7 @@ QPushButton:pressed {
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_24">
+      <widget class="QPushButton" name="help_button">
        <property name="geometry">
         <rect>
          <x>38</x>
@@ -701,7 +701,7 @@ QPushButton:pressed {
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_25">
+      <widget class="QPushButton" name="explorer_button">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -734,7 +734,7 @@ QPushButton:pressed {
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_26">
+      <widget class="QPushButton" name="aboutUs_button">
        <property name="geometry">
         <rect>
          <x>41</x>
@@ -767,7 +767,7 @@ QPushButton:pressed {
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="revert_button">
        <property name="geometry">
         <rect>
          <x>36</x>
@@ -810,7 +810,7 @@ QPushButton:pressed {
         <bool>false</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_28">
+      <widget class="QPushButton" name="githubLink_button">
        <property name="geometry">
         <rect>
          <x>22</x>
@@ -839,7 +839,7 @@ background-color:rgba(255,255,255,0);
         </size>
        </property>
       </widget>
-      <widget class="QGroupBox" name="groupBox_2">
+      <widget class="QGroupBox" name="objects_groupBox">
        <property name="geometry">
         <rect>
          <x>970</x>
@@ -861,7 +861,7 @@ border: none;</string>
        <property name="flat">
         <bool>false</bool>
        </property>
-       <widget class="QLabel" name="label_7">
+       <widget class="QLabel" name="truck_label">
         <property name="geometry">
          <rect>
           <x>55</x>
@@ -886,7 +886,7 @@ border: none;</string>
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QLabel" name="label_6">
+       <widget class="QLabel" name="animal_label">
         <property name="geometry">
          <rect>
           <x>258</x>
@@ -911,7 +911,7 @@ border: none;</string>
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="cycle_label">
         <property name="geometry">
          <rect>
           <x>258</x>
@@ -936,7 +936,7 @@ border: none;</string>
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="trafficSign_label">
         <property name="geometry">
          <rect>
           <x>256</x>
@@ -964,7 +964,7 @@ background-color: rgba(228, 228, 228, 0.04);
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QLabel" name="label_8">
+       <widget class="QLabel" name="car_label">
         <property name="geometry">
          <rect>
           <x>52</x>
@@ -991,7 +991,7 @@ background-color: rgba(228, 228, 228, 0.04);
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_13" native="true">
+       <widget class="QWidget" name="blue_truck_widget" native="true">
         <property name="geometry">
          <rect>
           <x>18</x>
@@ -1004,7 +1004,7 @@ background-color: rgba(228, 228, 228, 0.04);
          <string notr="true">border-image: url(:/img/Images/11_blue.png);</string>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_14" native="true">
+       <widget class="QWidget" name="green_person_widget" native="true">
         <property name="geometry">
          <rect>
           <x>18</x>
@@ -1018,7 +1018,7 @@ background-color: rgba(228, 228, 228, 0.04);
 border-image: url(:/img/Images/11_green.png);</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_9">
+       <widget class="QLabel" name="person_label">
         <property name="geometry">
          <rect>
           <x>57</x>
@@ -1043,20 +1043,7 @@ border-image: url(:/img/Images/11_green.png);</string>
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_15" native="true">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>130</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/others/blue.png);</string>
-        </property>
-       </widget>
-       <widget class="QWidget" name="widget_16" native="true">
+       <widget class="QWidget" name="red_car_widget" native="true">
         <property name="geometry">
          <rect>
           <x>18</x>
@@ -1070,7 +1057,7 @@ border-image: url(:/img/Images/11_green.png);</string>
 </string>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_17" native="true">
+       <widget class="QWidget" name="yellow_animal_widget" native="true">
         <property name="geometry">
          <rect>
           <x>222</x>
@@ -1084,7 +1071,7 @@ border-image: url(:/img/Images/11_green.png);</string>
 </string>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_18" native="true">
+       <widget class="QWidget" name="orange_cycle_widget" native="true">
         <property name="geometry">
          <rect>
           <x>222</x>
@@ -1098,7 +1085,7 @@ border-image: url(:/img/Images/11_green.png);</string>
 </string>
         </property>
        </widget>
-       <widget class="QWidget" name="widget_19" native="true">
+       <widget class="QWidget" name="purple_trafficSign_widget" native="true">
         <property name="geometry">
          <rect>
           <x>222</x>
@@ -1113,7 +1100,7 @@ border-image: url(:/img/Images/11_green.png);</string>
         </property>
        </widget>
       </widget>
-      <widget class="QPushButton" name="pushButton_29">
+      <widget class="QPushButton" name="currentLog_button">
        <property name="geometry">
         <rect>
          <x>978</x>
@@ -1150,7 +1137,7 @@ QPushButton:pressed {
         <string>CURRENT LOG</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_30">
+      <widget class="QPushButton" name="currentLog_dropDown_button">
        <property name="geometry">
         <rect>
          <x>1088</x>
@@ -1184,7 +1171,7 @@ QPushButton:pressed {
         <string/>
        </property>
       </widget>
-      <widget class="QWidget" name="widget_20" native="true">
+      <widget class="QWidget" name="wifi_widget" native="true">
        <property name="geometry">
         <rect>
          <x>956</x>
@@ -1199,7 +1186,7 @@ background-color: rgba(255,255,255,0);
 border-radius: 16px;</string>
        </property>
       </widget>
-      <widget class="QTextBrowser" name="textBrowser">
+      <widget class="QTextBrowser" name="location_textBrowser">
        <property name="geometry">
         <rect>
          <x>1021</x>
@@ -1228,7 +1215,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;India&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_12">
+      <widget class="QLabel" name="backgroundTwo_label">
        <property name="geometry">
         <rect>
          <x>0</x>
@@ -1248,7 +1235,7 @@ border-bottom-left-radius:23px;</string>
         <string/>
        </property>
       </widget>
-      <widget class="QWidget" name="widget_4" native="true">
+      <widget class="QWidget" name="operationsPane_widget" native="true">
        <property name="geometry">
         <rect>
          <x>973</x>
@@ -1262,7 +1249,7 @@ border-bottom-left-radius:23px;</string>
 border: 1.3px solid rgba(255, 255, 255, 1);
 border-radius:5px;</string>
        </property>
-       <widget class="QGroupBox" name="groupBox">
+       <widget class="QGroupBox" name="operationsPane_groupBox">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -1279,7 +1266,7 @@ color:rgba(255,255,255)</string>
         <property name="title">
          <string/>
         </property>
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="draw_button">
          <property name="geometry">
           <rect>
            <x>40</x>
@@ -1322,7 +1309,7 @@ QPushButton:pressed {
           </size>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_9">
+        <widget class="QPushButton" name="zoom_in_button">
          <property name="geometry">
           <rect>
            <x>40</x>
@@ -1368,7 +1355,7 @@ QPushButton:pressed {
           <string/>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_10">
+        <widget class="QPushButton" name="point_button">
          <property name="geometry">
           <rect>
            <x>164</x>
@@ -1420,7 +1407,7 @@ QPushButton:pressed {
           <string/>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_13">
+        <widget class="QPushButton" name="undo_button">
          <property name="geometry">
           <rect>
            <x>285</x>
@@ -1466,7 +1453,7 @@ QPushButton:pressed {
           <string/>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_11">
+        <widget class="QPushButton" name="zoom_out_button">
          <property name="geometry">
           <rect>
            <x>164</x>
@@ -1512,7 +1499,7 @@ QPushButton:pressed {
           <string/>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_12">
+        <widget class="QPushButton" name="redo_button">
          <property name="geometry">
           <rect>
            <x>285</x>
@@ -1557,7 +1544,7 @@ QPushButton:pressed {
           <string/>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_5">
+        <widget class="QPushButton" name="drawText_button">
          <property name="geometry">
           <rect>
            <x>42</x>
@@ -1581,7 +1568,7 @@ color:rgba(255,255,255)</string>
           <string>Draw</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_6">
+        <widget class="QPushButton" name="pointText_button">
          <property name="geometry">
           <rect>
            <x>167</x>
@@ -1605,7 +1592,7 @@ color:rgba(255,255,255)</string>
           <string>Point</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_16">
+        <widget class="QPushButton" name="undoText_button">
          <property name="geometry">
           <rect>
            <x>287</x>
@@ -1628,7 +1615,7 @@ background-color:none;</string>
           <string>Undo</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_15">
+        <widget class="QPushButton" name="zoom_outText_button">
          <property name="geometry">
           <rect>
            <x>148</x>
@@ -1652,7 +1639,7 @@ color:rgba(255,255,255)</string>
           <string>Zoom Out</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_14">
+        <widget class="QPushButton" name="redoText_button">
          <property name="geometry">
           <rect>
            <x>287</x>
@@ -1675,7 +1662,7 @@ background-color:none;</string>
           <string>Redo</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_7">
+        <widget class="QPushButton" name="zoom_inText_button">
          <property name="geometry">
           <rect>
            <x>32</x>
@@ -1700,7 +1687,7 @@ color:rgba(255,255,255)
           <string>Zoom In</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_27">
+        <widget class="QPushButton" name="expandPane_button">
          <property name="geometry">
           <rect>
            <x>180</x>
@@ -1720,7 +1707,7 @@ color:rgba(255,255,255)
         </widget>
        </widget>
       </widget>
-      <widget class="QLabel" name="label_10">
+      <widget class="QLabel" name="counter_label">
        <property name="geometry">
         <rect>
          <x>714</x>
@@ -1745,7 +1732,7 @@ background-color: rgba(255,255,255,0);</string>
         <string>128/12400</string>
        </property>
       </widget>
-      <widget class="QFrame" name="frame_7">
+      <widget class="QFrame" name="tracker_frame">
        <property name="geometry">
         <rect>
          <x>680</x>
@@ -1765,7 +1752,7 @@ background-color: rgba(255,255,255,0);</string>
         <enum>QFrame::Raised</enum>
        </property>
       </widget>
-      <widget class="QLabel" name="label_11">
+      <widget class="QLabel" name="objectDetection_label">
        <property name="geometry">
         <rect>
          <x>673</x>
@@ -1790,7 +1777,7 @@ background-color: rgba(255,255,255,0);</string>
         <string>Object Detection</string>
        </property>
       </widget>
-      <widget class="QToolButton" name="toolButton">
+      <widget class="QToolButton" name="menuBar_toolButton">
        <property name="geometry">
         <rect>
          <x>865</x>
@@ -1816,7 +1803,7 @@ color: #FFFFFF;</string>
         <string>...</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_32">
+      <widget class="QPushButton" name="imgPath_prev1_button">
        <property name="geometry">
         <rect>
          <x>137</x>
@@ -1851,7 +1838,7 @@ QPushButton:pressed {
         <string/>
        </property>
       </widget>
-      <widget class="QLabel" name="label_13">
+      <widget class="QLabel" name="imgPath_label">
        <property name="geometry">
         <rect>
          <x>155</x>
@@ -1876,7 +1863,7 @@ background-color:none;
         <string>..data/ Images</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_14">
+      <widget class="QLabel" name="imgName_label">
        <property name="geometry">
         <rect>
          <x>155</x>
@@ -1904,7 +1891,7 @@ background-color:none;
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_33">
+      <widget class="QPushButton" name="imgPath_prev2_button">
        <property name="geometry">
         <rect>
          <x>127</x>
@@ -1938,7 +1925,7 @@ QPushButton:pressed {
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_31">
+      <widget class="QPushButton" name="imgPath_dropDownHidden_button">
        <property name="geometry">
         <rect>
          <x>363</x>
@@ -1971,7 +1958,7 @@ QPushButton:pressed {
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_34">
+      <widget class="QPushButton" name="imgPath_dropDown_button">
        <property name="geometry">
         <rect>
          <x>362</x>
@@ -2004,7 +1991,7 @@ QPushButton:pressed {
         <string/>
        </property>
       </widget>
-      <widget class="QGroupBox" name="groupBox_3">
+      <widget class="QGroupBox" name="controlButtons_groupBox">
        <property name="geometry">
         <rect>
          <x>12</x>
@@ -2022,7 +2009,7 @@ background-color: rgba(196, 196, 196, 0.08);
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_35">
+      <widget class="QPushButton" name="close_button">
        <property name="geometry">
         <rect>
          <x>16</x>
@@ -2040,7 +2027,7 @@ background-color: rgba(189, 14, 14, 0.54);
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_36">
+      <widget class="QPushButton" name="maximize_restore_button">
        <property name="geometry">
         <rect>
          <x>43</x>
@@ -2059,7 +2046,7 @@ background-color: rgba(255, 215, 75, 0.6);
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_37">
+      <widget class="QPushButton" name="minimize_button">
        <property name="geometry">
         <rect>
          <x>69</x>
@@ -2078,50 +2065,50 @@ background-color: rgba(68, 223, 83, 0.52);
         <string/>
        </property>
       </widget>
-      <zorder>label_12</zorder>
-      <zorder>pushButton_19</zorder>
-      <zorder>widget_3</zorder>
-      <zorder>pushButton_2</zorder>
-      <zorder>pushButton_3</zorder>
-      <zorder>pushButton_8</zorder>
-      <zorder>pushButton_17</zorder>
-      <zorder>pushButton_18</zorder>
+      <zorder>backgroundTwo_label</zorder>
+      <zorder>img2_button</zorder>
+      <zorder>logo_widget</zorder>
+      <zorder>img0_button</zorder>
+      <zorder>imgFrame0_button</zorder>
+      <zorder>img1_button</zorder>
+      <zorder>imgFrame1_button</zorder>
+      <zorder>imgFrame2_button</zorder>
       <zorder>timeEdit</zorder>
-      <zorder>label</zorder>
-      <zorder>widget_5</zorder>
-      <zorder>pushButton_23</zorder>
-      <zorder>label_2</zorder>
-      <zorder>widget_6</zorder>
-      <zorder>pushButton_20</zorder>
-      <zorder>pushButton_21</zorder>
-      <zorder>label_3</zorder>
-      <zorder>widget_7</zorder>
-      <zorder>pushButton_22</zorder>
-      <zorder>pushButton_24</zorder>
-      <zorder>pushButton_25</zorder>
-      <zorder>pushButton_26</zorder>
-      <zorder>pushButton</zorder>
-      <zorder>pushButton_28</zorder>
-      <zorder>groupBox_2</zorder>
-      <zorder>pushButton_29</zorder>
-      <zorder>pushButton_30</zorder>
-      <zorder>widget_20</zorder>
-      <zorder>textBrowser</zorder>
-      <zorder>widget_4</zorder>
-      <zorder>label_10</zorder>
-      <zorder>frame_7</zorder>
-      <zorder>label_11</zorder>
-      <zorder>toolButton</zorder>
-      <zorder>pushButton_32</zorder>
-      <zorder>label_13</zorder>
-      <zorder>label_14</zorder>
-      <zorder>pushButton_33</zorder>
-      <zorder>pushButton_31</zorder>
-      <zorder>pushButton_34</zorder>
-      <zorder>groupBox_3</zorder>
-      <zorder>pushButton_35</zorder>
-      <zorder>pushButton_36</zorder>
-      <zorder>pushButton_37</zorder>
+      <zorder>date_label</zorder>
+      <zorder>imgPreview_widget</zorder>
+      <zorder>arrowNextImg_button</zorder>
+      <zorder>nextImg_label</zorder>
+      <zorder>currentLogCoordinates_widget</zorder>
+      <zorder>nextImg_button</zorder>
+      <zorder>prevImg_button</zorder>
+      <zorder>saveInfo_label</zorder>
+      <zorder>slider_widget</zorder>
+      <zorder>adjust_button</zorder>
+      <zorder>help_button</zorder>
+      <zorder>explorer_button</zorder>
+      <zorder>aboutUs_button</zorder>
+      <zorder>revert_button</zorder>
+      <zorder>githubLink_button</zorder>
+      <zorder>objects_groupBox</zorder>
+      <zorder>currentLog_button</zorder>
+      <zorder>currentLog_dropDown_button</zorder>
+      <zorder>wifi_widget</zorder>
+      <zorder>location_textBrowser</zorder>
+      <zorder>operationsPane_widget</zorder>
+      <zorder>counter_label</zorder>
+      <zorder>tracker_frame</zorder>
+      <zorder>objectDetection_label</zorder>
+      <zorder>menuBar_toolButton</zorder>
+      <zorder>imgPath_prev1_button</zorder>
+      <zorder>imgPath_label</zorder>
+      <zorder>imgName_label</zorder>
+      <zorder>imgPath_prev2_button</zorder>
+      <zorder>imgPath_dropDownHidden_button</zorder>
+      <zorder>imgPath_dropDown_button</zorder>
+      <zorder>controlButtons_groupBox</zorder>
+      <zorder>close_button</zorder>
+      <zorder>maximize_restore_button</zorder>
+      <zorder>minimize_button</zorder>
      </widget>
     </item>
    </layout>

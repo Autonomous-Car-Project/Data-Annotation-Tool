@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QMainWindow, QGraphicsDropShadowEffect, QApplication
 
 from ui_splash import Ui_SplashScreen
 
-from design.mainwindow import Ui_MainWindow
+from src.mainwindow import Ui_MainWindow
 
 counter = 0
 

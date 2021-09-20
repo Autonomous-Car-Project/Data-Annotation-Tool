@@ -9,7 +9,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import sys, design.resources.img
+import sys
+import src.resources.img
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

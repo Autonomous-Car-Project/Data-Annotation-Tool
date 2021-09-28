@@ -15,7 +15,7 @@ import src.resources.img
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1383, 758)
+        MainWindow.resize(1383, 757)
         font = QtGui.QFont()
         font.setPointSize(7)
         MainWindow.setFont(font)
@@ -140,18 +140,6 @@ class Ui_MainWindow(object):
 "")
         self.img2_button.setText("")
         self.img2_button.setObjectName("img2_button")
-        self.timeEdit = QtWidgets.QTimeEdit(self.background_widget)
-        self.timeEdit.setGeometry(QtCore.QRect(1209, 35, 161, 65))
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(37)
-        self.timeEdit.setFont(font)
-        self.timeEdit.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-"border:none;\n"
-"color:rgba(255,255,255,255);")
-        self.timeEdit.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
-        self.timeEdit.setTime(QtCore.QTime(10, 36, 0))
-        self.timeEdit.setObjectName("timeEdit")
         self.date_label = QtWidgets.QLabel(self.background_widget)
         self.date_label.setGeometry(QtCore.QRect(1247, 95, 121, 21))
         font = QtGui.QFont()
@@ -217,29 +205,16 @@ class Ui_MainWindow(object):
 "")
         self.nextImg_label.setObjectName("nextImg_label")
         self.currentLogCoordinates_widget = QtWidgets.QWidget(self.background_widget)
-        self.currentLogCoordinates_widget.setGeometry(QtCore.QRect(982, 645, 361, 77))
+        self.currentLogCoordinates_widget.setGeometry(QtCore.QRect(982, 645, 361, 79))
         self.currentLogCoordinates_widget.setStyleSheet("background-color:#737373;\n"
 "border-radius:10px;")
         self.currentLogCoordinates_widget.setObjectName("currentLogCoordinates_widget")
-        self.coordinates2_textEdit = QtWidgets.QTextEdit(self.currentLogCoordinates_widget)
-        self.coordinates2_textEdit.setGeometry(QtCore.QRect(215, 5, 141, 71))
-        font = QtGui.QFont()
-        font.setFamily("Ebrima")
-        self.coordinates2_textEdit.setFont(font)
-        self.coordinates2_textEdit.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-"border:20px\n"
-"")
-        self.coordinates2_textEdit.setObjectName("coordinates2_textEdit")
-        self.coordinates1_textEdit = QtWidgets.QTextEdit(self.currentLogCoordinates_widget)
-        self.coordinates1_textEdit.setGeometry(QtCore.QRect(22, 5, 161, 75))
-        font = QtGui.QFont()
-        font.setFamily("Ebrima")
-        font.setPointSize(7)
-        self.coordinates1_textEdit.setFont(font)
-        self.coordinates1_textEdit.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-"border:15px\n"
-"")
-        self.coordinates1_textEdit.setObjectName("coordinates1_textEdit")
+        self.coordinates1_label = QtWidgets.QLabel(self.currentLogCoordinates_widget)
+        self.coordinates1_label.setGeometry(QtCore.QRect(30, 0, 111, 81))
+        self.coordinates1_label.setObjectName("coordinates1_label")
+        self.coordinates2_label = QtWidgets.QLabel(self.currentLogCoordinates_widget)
+        self.coordinates2_label.setGeometry(QtCore.QRect(217, 6, 121, 71))
+        self.coordinates2_label.setObjectName("coordinates2_label")
         self.nextImg_button = QtWidgets.QPushButton(self.background_widget)
         self.nextImg_button.setGeometry(QtCore.QRect(870, 365, 55, 55))
         font = QtGui.QFont()
@@ -649,16 +624,6 @@ class Ui_MainWindow(object):
 "background-color: rgba(255,255,255,0);\n"
 "border-radius: 16px;")
         self.wifi_widget.setObjectName("wifi_widget")
-        self.location_textBrowser = QtWidgets.QTextBrowser(self.background_widget)
-        self.location_textBrowser.setGeometry(QtCore.QRect(1021, 50, 141, 61))
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(11)
-        self.location_textBrowser.setFont(font)
-        self.location_textBrowser.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-"border:none;\n"
-"color:#ffffff")
-        self.location_textBrowser.setObjectName("location_textBrowser")
         self.backgroundTwo_label = QtWidgets.QLabel(self.background_widget)
         self.backgroundTwo_label.setGeometry(QtCore.QRect(0, 0, 943, 757))
         self.backgroundTwo_label.setStyleSheet("\n"
@@ -1098,6 +1063,35 @@ class Ui_MainWindow(object):
 "")
         self.minimize_button.setText("")
         self.minimize_button.setObjectName("minimize_button")
+        self.locationCity_label = QtWidgets.QLabel(self.background_widget)
+        self.locationCity_label.setGeometry(QtCore.QRect(1021, 52, 81, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
+        self.locationCity_label.setFont(font)
+        self.locationCity_label.setStyleSheet("color: #ffffff;")
+        self.locationCity_label.setObjectName("locationCity_label")
+        self.locationCountry_label = QtWidgets.QLabel(self.background_widget)
+        self.locationCountry_label.setGeometry(QtCore.QRect(1023, 79, 41, 21))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setWeight(50)
+        self.locationCountry_label.setFont(font)
+        self.locationCountry_label.setStyleSheet("color: #ffffff;")
+        self.locationCountry_label.setObjectName("locationCountry_label")
+        self.time_label = QtWidgets.QLabel(self.background_widget)
+        self.time_label.setGeometry(QtCore.QRect(1209, 35, 161, 65))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(37)
+        self.time_label.setFont(font)
+        self.time_label.setStyleSheet("color: #ffffff;\n"
+"")
+        self.time_label.setObjectName("time_label")
         self.backgroundTwo_label.raise_()
         self.img2_button.raise_()
         self.logo_widget.raise_()
@@ -1106,7 +1100,6 @@ class Ui_MainWindow(object):
         self.img1_button.raise_()
         self.imgFrame1_button.raise_()
         self.imgFrame2_button.raise_()
-        self.timeEdit.raise_()
         self.date_label.raise_()
         self.imgPreview_widget.raise_()
         self.arrowNextImg_button.raise_()
@@ -1126,7 +1119,6 @@ class Ui_MainWindow(object):
         self.currentLog_button.raise_()
         self.currentLog_dropDown_button.raise_()
         self.wifi_widget.raise_()
-        self.location_textBrowser.raise_()
         self.operationsPane_widget.raise_()
         self.counter_label.raise_()
         self.tracker_frame.raise_()
@@ -1142,6 +1134,9 @@ class Ui_MainWindow(object):
         self.close_button.raise_()
         self.maximize_restore_button.raise_()
         self.minimize_button.raise_()
+        self.locationCity_label.raise_()
+        self.locationCountry_label.raise_()
+        self.time_label.raise_()
         self.verticalLayout.addWidget(self.background_widget)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -1151,25 +1146,24 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.timeEdit.setDisplayFormat(_translate("MainWindow", "hh:mm"))
         self.date_label.setText(_translate("MainWindow", "  14th August, 2021"))
         self.nextImg_label.setText(_translate("MainWindow", "NEXT IMAGES"))
-        self.coordinates2_textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.coordinates1_label.setText(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Ebrima\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ff0000;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 1   52  45  180  125</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ffff00;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 4   56  28  192  136</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ffff00;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 8   12  53  172  125</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ff0000;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 6   25  97  120  158</span></p></body></html>"))
-        self.coordinates1_textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:1px; margin-left:1.5px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ebrima\'; font-size:6pt; color:#06dc8e;\">●</span><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffffff;\"> 1  32  45  170  185</span></p>\n"
+"<p style=\" margin-top:1px; margin-bottom:1px; margin-left:1.5px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ebrima\'; font-size:6pt; color:#ff0000;\">●</span><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffffff;\"> 4  25  89  180  172</span></p>\n"
+"<p style=\" margin-top:1px; margin-bottom:1px; margin-left:1.5px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ebrima\'; font-size:6pt; color:#05e198;\">●</span><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffffff;\"> 8  28  65  789  147</span></p>\n"
+"<p style=\" margin-top:1px; margin-bottom:12px; margin-left:1.5px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ebrima\'; font-size:6pt; color:#ff0000;\">●</span><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffffff;\"> 6  25  97  120  158</span></p></body></html>"))
+        self.coordinates2_label.setText(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Ebrima\'; font-size:7pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#06dc8e;\">●</span><span style=\" font-size:6pt; color:#005500;\"> </span><span style=\" color:#ffffff;\">1   32  45  170  185</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#ff0000;\">●</span><span style=\" font-size:6pt; color:#aaaa7f;\"> </span><span style=\" color:#ffffff;\">4   25  89  180  172</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#05e198;\">●</span><span style=\" font-size:6pt; color:#ffffff;\"> </span><span style=\" color:#ffffff;\">8   28  65  789  147</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#ff0000;\">●</span><span style=\" font-size:6pt; color:#aaffff;\"> </span><span style=\" color:#ffffff;\">6   25  97  120  158</span></p></body></html>"))
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:1.5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ff0000;\">●</span><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffffff;\"> 1   52  45  180  125</span></p>\n"
+"<p style=\" margin-top:1.5px; margin-bottom:1.5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffff00;\">●</span><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffffff;\"> 4   56  28  192  136</span></p>\n"
+"<p style=\" margin-top:1.5px; margin-bottom:1.5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffff00;\">●</span><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffffff;\"> 8   12  53  172  125</span></p>\n"
+"<p style=\" margin-top:1.5px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ff0000;\">●</span><span style=\" font-family:\'Ebrima\'; font-size:7pt; color:#ffffff;\"> 6   25  97  120  158</span></p></body></html>"))
         self.nextImg_button.setText(_translate("MainWindow", "+"))
         self.prevImg_button.setText(_translate("MainWindow", "-"))
         self.saveInfo_label.setText(_translate("MainWindow", "   abcdefgh.txt saved successfully!"))
@@ -1180,12 +1174,6 @@ class Ui_MainWindow(object):
         self.cycle_button.setText(_translate("MainWindow", "Cycle"))
         self.trafficSign_button.setText(_translate("MainWindow", "Traffic Sign"))
         self.currentLog_button.setText(_translate("MainWindow", "CURRENT LOG"))
-        self.location_textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Arial\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:15pt;\">Kolkata</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">India</span></p></body></html>"))
         self.drawText_button.setText(_translate("MainWindow", "Draw"))
         self.pointText_button.setText(_translate("MainWindow", "Point"))
         self.undoText_button.setText(_translate("MainWindow", "Undo"))
@@ -1197,7 +1185,9 @@ class Ui_MainWindow(object):
         self.menuBar_toolButton.setText(_translate("MainWindow", "..."))
         self.imgPath_label.setText(_translate("MainWindow", "..data/ Images"))
         self.imgName_label.setText(_translate("MainWindow", "abcdefgh.jpg"))
-
+        self.locationCity_label.setText(_translate("MainWindow", "Kolkata"))
+        self.locationCountry_label.setText(_translate("MainWindow", "India"))
+        self.time_label.setText(_translate("MainWindow", "10:36"))
 
 
 if __name__ == "__main__":

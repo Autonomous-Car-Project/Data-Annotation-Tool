@@ -19,229 +19,192 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(7)
         MainWindow.setFont(font)
-        
-        #--------------------------- CENTRAL WIDGET---------------------------- #
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        
-        
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
-        
-        
         self.background_widget = QtWidgets.QWidget(self.centralwidget)
         self.background_widget.setStyleSheet("background: #2F2F2F;\n"
-                                             "border-radius: 23px;")
+"border-radius: 23px;")
         self.background_widget.setObjectName("background_widget")
-        
-        
         self.logo_widget = QtWidgets.QWidget(self.background_widget)
         self.logo_widget.setGeometry(QtCore.QRect(22, 64, 55, 55))
         self.logo_widget.setStyleSheet("image: url(:/img/Images/00_Logo.png);\n"
-                                       "background-color:rgba(255,255,255,0);")
+"background-color:rgba(255,255,255,0);")
         self.logo_widget.setObjectName("logo_widget")
-        
-        
         self.img0_button = QtWidgets.QPushButton(self.background_widget)
         self.img0_button.setGeometry(QtCore.QRect(162, 628, 200, 113))
         self.img0_button.setAutoFillBackground(False)
         self.img0_button.setStyleSheet("QPushButton{\n"
-                                        "    \n"
-                                        "    border-image: url(:/img/Images/06_img2.jpeg);\n"
-                                        "     border-radius:15px;\n"
-                                        "}\n"
-                                        "QPushButton:hover{\n"
-                                        "    border-image: url(:/img/Images/06_img2.jpeg);\n"
-                                        "     border-radius:15px;\n"
-                                        "}\n"
-                                        "QPushButton:pressed{\n"
-                                        "    border-image: url(:/img/Images/06_img2.jpeg);\n"
-                                        "     border-radius:15px;\n"
-                                        "}")
+"    \n"
+"    border-image: url(:/img/Images/06_img2.jpeg);\n"
+"     border-radius:15px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border-image: url(:/img/Images/06_img2.jpeg);\n"
+"     border-radius:15px;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    border-image: url(:/img/Images/06_img2.jpeg);\n"
+"     border-radius:15px;\n"
+"}")
         self.img0_button.setText("")
         self.img0_button.setObjectName("img0_button")
-        
-        
         self.imgFrame0_button = QtWidgets.QPushButton(self.background_widget)
         self.imgFrame0_button.setGeometry(QtCore.QRect(162, 628, 200, 113))
         self.imgFrame0_button.setStyleSheet("\n"
-                                        "QPushButton{\n"
-                                        "    background-color:rgba(255,255,255,100);\n"
-                                        "    border-radius:15px;\n"
-                                        "}\n"
-                                        "QPushButton:hover{\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    border-radius:15px;\n"
-                                        "}\n"
-                                        "QPushButton:pressed{\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    border-radius:15px;\n"
-                                        "}")
+"QPushButton{\n"
+"    background-color:rgba(255,255,255,100);\n"
+"    border-radius:15px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    border-radius:15px;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    border-radius:15px;\n"
+"}")
         self.imgFrame0_button.setText("")
         self.imgFrame0_button.setObjectName("imgFrame0_button")
-        
-        
         self.img1_button = QtWidgets.QPushButton(self.background_widget)
         self.img1_button.setGeometry(QtCore.QRect(390, 627, 200, 113))
         self.img1_button.setStyleSheet("\n"
-                                        "QPushButton{\n"
-                                        "    \n"
-                                        "    border-image: url(:/img/Images/06_img4.jpeg);\n"
-                                        "     border-radius:15px;\n"
-                                        "}\n"
-                                        "QPushButton:hover{\n"
-                                        "    border-image: url(:/img/Images/06_img4.jpeg);\n"
-                                        " \n"
-                                        "}\n"
-                                        "QPushButton:pressed{\n"
-                                        "    border-image: url(:/img/Images/06_img4.jpeg);\n"
-                                        "     \n"
-                                        "}\n"
-                                        "")
+"QPushButton{\n"
+"    \n"
+"    border-image: url(:/img/Images/06_img4.jpeg);\n"
+"     border-radius:15px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border-image: url(:/img/Images/06_img4.jpeg);\n"
+" \n"
+"}\n"
+"QPushButton:pressed{\n"
+"    border-image: url(:/img/Images/06_img4.jpeg);\n"
+"     \n"
+"}\n"
+"")
         self.img1_button.setText("")
         self.img1_button.setObjectName("img1_button")
-        
-        
         self.imgFrame1_button = QtWidgets.QPushButton(self.background_widget)
         self.imgFrame1_button.setGeometry(QtCore.QRect(390, 627, 200, 113))
         self.imgFrame1_button.setStyleSheet("\n"
-                                        "QPushButton{\n"
-                                        "    background-color:rgba(255,255,255,100);\n"
-                                        "    border-radius:15px;\n"
-                                        "}\n"
-                                        "QPushButton:hover{\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    \n"
-                                        "}\n"
-                                        "QPushButton:pressed{\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    \n"
-                                        "}")
+"QPushButton{\n"
+"    background-color:rgba(255,255,255,100);\n"
+"    border-radius:15px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    \n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    \n"
+"}")
         self.imgFrame1_button.setText("")
         self.imgFrame1_button.setObjectName("imgFrame1_button")
-        
-        
         self.imgFrame2_button = QtWidgets.QPushButton(self.background_widget)
         self.imgFrame2_button.setGeometry(QtCore.QRect(619, 628, 200, 113))
         self.imgFrame2_button.setStyleSheet("\n"
-                                        "QPushButton{\n"
-                                        "    background-color:rgba(255,255,255,100);\n"
-                                        "    border-radius:15px;\n"
-                                        "}\n"
-                                        "QPushButton:hover{\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    \n"
-                                        "}\n"
-                                        "QPushButton:pressed{\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    \n"
-                                        "}")
+"QPushButton{\n"
+"    background-color:rgba(255,255,255,100);\n"
+"    border-radius:15px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    \n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    \n"
+"}")
         self.imgFrame2_button.setText("")
         self.imgFrame2_button.setObjectName("imgFrame2_button")
-        
-        
         self.img2_button = QtWidgets.QPushButton(self.background_widget)
         self.img2_button.setGeometry(QtCore.QRect(619, 628, 200, 113))
         self.img2_button.setStyleSheet("QPushButton{\n"
-                                        "    \n"
-                                        "    border-image: url(:/img/Images/06_img3.jpeg);\n"
-                                        "     border-radius:15px;\n"
-                                        "\n"
-                                        "}\n"
-                                        "QPushButton:hover{\n"
-                                        "    border-image: url(:/img/Images/06_img3.jpeg);\n"
-                                        "     \n"
-                                        "}\n"
-                                        "QPushButton:pressed{\n"
-                                        "    border-image: url(:/img/Images/06_img3.jpeg);\n"
-                                        "     \n"
-                                        "}\n"
-                                        "")
+"    \n"
+"    border-image: url(:/img/Images/06_img3.jpeg);\n"
+"     border-radius:15px;\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border-image: url(:/img/Images/06_img3.jpeg);\n"
+"     \n"
+"}\n"
+"QPushButton:pressed{\n"
+"    border-image: url(:/img/Images/06_img3.jpeg);\n"
+"     \n"
+"}\n"
+"")
         self.img2_button.setText("")
         self.img2_button.setObjectName("img2_button")
-        
-        
         self.timeEdit = QtWidgets.QTimeEdit(self.background_widget)
         self.timeEdit.setGeometry(QtCore.QRect(1209, 35, 161, 65))
-        
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(37)
-
         self.timeEdit.setFont(font)
         self.timeEdit.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-                                        "border:none;\n"
-                                        "color:rgba(255,255,255,255);")
+"border:none;\n"
+"color:rgba(255,255,255,255);")
         self.timeEdit.setButtonSymbols(QtWidgets.QAbstractSpinBox.NoButtons)
         self.timeEdit.setTime(QtCore.QTime(10, 36, 0))
         self.timeEdit.setObjectName("timeEdit")
-        
-        
         self.date_label = QtWidgets.QLabel(self.background_widget)
         self.date_label.setGeometry(QtCore.QRect(1247, 95, 121, 21))
-       
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(8)
-       
         self.date_label.setFont(font)
         self.date_label.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-                                        "border:none;\n"
-                                        "color:rgba(255,255,255,255);\n"
-                                        "\n"
-                                        "")
+"border:none;\n"
+"color:rgba(255,255,255,255);\n"
+"\n"
+"")
         self.date_label.setObjectName("date_label")
-       
-       
         self.imgPreview_widget = QtWidgets.QWidget(self.background_widget)
         self.imgPreview_widget.setGeometry(QtCore.QRect(205, 202, 639, 359))
         font = QtGui.QFont()
         font.setPointSize(18)
         self.imgPreview_widget.setFont(font)
         self.imgPreview_widget.setStyleSheet("image: url(:/img/Images/06_img1.png);\n"
-                                                "background-color:rgba(255,255,255,0);\n"
-                                                "border:none;\n"
-                                                "")
+"background-color:rgba(255,255,255,0);\n"
+"border:none;\n"
+"")
         self.imgPreview_widget.setObjectName("imgPreview_widget")
-        
-        
         self.arrowNextImg_button = QtWidgets.QPushButton(self.background_widget)
         self.arrowNextImg_button.setGeometry(QtCore.QRect(857, 665, 41, 41))
         font = QtGui.QFont()
         font.setPointSize(15)
         self.arrowNextImg_button.setFont(font)
         self.arrowNextImg_button.setStyleSheet("\n"
-                                                "QPushButton {\n"
-                                                "   \n"
-                                                "    background-color:rgba(194, 194, 194, 0.25);\n"
-                                                "    border-radius:8px;\n"
-                                                "  }\n"
-                                                "QPushButton:hover {\n"
-                                                "    background-color:rgba(194, 194, 194, 0.25);\n"
-                                                " border: 2px solid #000000;\n"
-                                                "    /*border-radius:5px;*/\n"
-                                                "\n"
-                                                "    }\n"
-                                                "QPushButton:pressed {\n"
-                                                "  background-color:rgba(194, 194, 194, 0.25);\n"
-                                                " border: 2px solid #000000;\n"
-                                                "   /*border-radius:5px;*/\n"
-                                                "    }\n"
-                                                "\n"
-                                                "")
+"QPushButton {\n"
+"   \n"
+"    background-color:rgba(194, 194, 194, 0.25);\n"
+"    border-radius:8px;\n"
+"  }\n"
+"QPushButton:hover {\n"
+"    background-color:rgba(194, 194, 194, 0.25);\n"
+" border: 2px solid #000000;\n"
+"    /*border-radius:5px;*/\n"
+"\n"
+"    }\n"
+"QPushButton:pressed {\n"
+"  background-color:rgba(194, 194, 194, 0.25);\n"
+" border: 2px solid #000000;\n"
+"   /*border-radius:5px;*/\n"
+"    }\n"
+"\n"
+"")
         self.arrowNextImg_button.setText("")
-        
-        
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/img/Images/07_next_img.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         icon.addPixmap(QtGui.QPixmap(":/img/Images/07_next_img.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-        
         self.arrowNextImg_button.setIcon(icon)
         self.arrowNextImg_button.setIconSize(QtCore.QSize(11, 18))
         self.arrowNextImg_button.setObjectName("arrowNextImg_button")
-        
-        
         self.nextImg_label = QtWidgets.QLabel(self.background_widget)
         self.nextImg_label.setGeometry(QtCore.QRect(140, 591, 101, 16))
         font = QtGui.QFont()
@@ -249,44 +212,34 @@ class Ui_MainWindow(object):
         font.setPointSize(9)
         self.nextImg_label.setFont(font)
         self.nextImg_label.setStyleSheet("color:#737373;\n"
-                                        "border:none;\n"
-                                        "background-color:none;\n"
-                                        "")
+"border:none;\n"
+"background-color:none;\n"
+"")
         self.nextImg_label.setObjectName("nextImg_label")
-        
-        
         self.currentLogCoordinates_widget = QtWidgets.QWidget(self.background_widget)
         self.currentLogCoordinates_widget.setGeometry(QtCore.QRect(982, 645, 361, 77))
         self.currentLogCoordinates_widget.setStyleSheet("background-color:#737373;\n"
-                                                        "border-radius:10px;")
+"border-radius:10px;")
         self.currentLogCoordinates_widget.setObjectName("currentLogCoordinates_widget")
-        
-        
         self.coordinates2_textEdit = QtWidgets.QTextEdit(self.currentLogCoordinates_widget)
         self.coordinates2_textEdit.setGeometry(QtCore.QRect(215, 5, 141, 71))
         font = QtGui.QFont()
         font.setFamily("Ebrima")
         self.coordinates2_textEdit.setFont(font)
         self.coordinates2_textEdit.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-                                                "border:20px\n"
-                                                "")
+"border:20px\n"
+"")
         self.coordinates2_textEdit.setObjectName("coordinates2_textEdit")
-        
-        
         self.coordinates1_textEdit = QtWidgets.QTextEdit(self.currentLogCoordinates_widget)
         self.coordinates1_textEdit.setGeometry(QtCore.QRect(22, 5, 161, 75))
-        
         font = QtGui.QFont()
         font.setFamily("Ebrima")
         font.setPointSize(7)
-        
         self.coordinates1_textEdit.setFont(font)
         self.coordinates1_textEdit.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-                                                "border:15px\n"
-                                                "")
+"border:15px\n"
+"")
         self.coordinates1_textEdit.setObjectName("coordinates1_textEdit")
-        
-        
         self.nextImg_button = QtWidgets.QPushButton(self.background_widget)
         self.nextImg_button.setGeometry(QtCore.QRect(870, 365, 55, 55))
         font = QtGui.QFont()
@@ -294,22 +247,22 @@ class Ui_MainWindow(object):
         font.setPointSize(19)
         self.nextImg_button.setFont(font)
         self.nextImg_button.setStyleSheet("\n"
-                                        "QPushButton{\n"
-                                        "    background-color:rgba(47, 47, 47, 1);\n"
-                                        "    color:rgba(255,255,255,255);\n"
-                                        "    border-radius:20px;\n"
-                                        "}\n"
-                                        "QPushButton:hover{\n"
-                                        "    background-color:rgba(47, 47, 47, 1);\n"
-                                        "    color:rgba(0,132,0,255);\n"
-                                        "    \n"
-                                        "}\n"
-                                        "QPushButton:pressed{\n"
-                                        "    background-color:rgba(47, 47, 47, 1);\n"
-                                        "    color:rgba(0,132,0,255);\n"
-                                        "    \n"
-                                        "}\n"
-                                        "")
+"QPushButton{\n"
+"    background-color:rgba(47, 47, 47, 1);\n"
+"    color:rgba(255,255,255,255);\n"
+"    border-radius:20px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color:rgba(47, 47, 47, 1);\n"
+"    color:rgba(0,132,0,255);\n"
+"    \n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgba(47, 47, 47, 1);\n"
+"    color:rgba(0,132,0,255);\n"
+"    \n"
+"}\n"
+"")
         self.nextImg_button.setObjectName("nextImg_button")
         self.prevImg_button = QtWidgets.QPushButton(self.background_widget)
         self.prevImg_button.setGeometry(QtCore.QRect(116, 365, 55, 55))
@@ -318,21 +271,21 @@ class Ui_MainWindow(object):
         font.setPointSize(17)
         self.prevImg_button.setFont(font)
         self.prevImg_button.setStyleSheet("QPushButton{\n"
-                                        "    background-color:rgba(47, 47, 47, 1);\n"
-                                        "    color:rgba(255,255,255,255);\n"
-                                        "    border-radius:20px;\n"
-                                        "}\n"
-                                        "QPushButton:hover{\n"
-                                        "    background-color:rgba(47, 47, 47, 1);\n"
-                                        "    color:rgba(0,132,0,255);\n"
-                                        "    \n"
-                                        "}\n"
-                                        "QPushButton:pressed{\n"
-                                        "    background-color:rgba(47, 47, 47, 1);\n"
-                                        "    color:rgba(0,132,0,255);\n"
-                                        "    \n"
-                                        "}\n"
-                                        "")
+"    background-color:rgba(47, 47, 47, 1);\n"
+"    color:rgba(255,255,255,255);\n"
+"    border-radius:20px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color:rgba(47, 47, 47, 1);\n"
+"    color:rgba(0,132,0,255);\n"
+"    \n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgba(47, 47, 47, 1);\n"
+"    color:rgba(0,132,0,255);\n"
+"    \n"
+"}\n"
+"")
         self.prevImg_button.setObjectName("prevImg_button")
         self.saveInfo_label = QtWidgets.QLabel(self.background_widget)
         self.saveInfo_label.setGeometry(QtCore.QRect(974, 410, 374, 33))
@@ -341,317 +294,309 @@ class Ui_MainWindow(object):
         font.setPointSize(9)
         self.saveInfo_label.setFont(font)
         self.saveInfo_label.setStyleSheet("color: #FFFFFF;\n"
-                                        "background-color: #272121;\n"
-                                        "border-left: 7px solid #3225CC;")
+"background-color: #272121;\n"
+"border-left: 7px solid #3225CC;")
         self.saveInfo_label.setObjectName("saveInfo_label")
-        
-        
         self.slider_widget = QtWidgets.QWidget(self.background_widget)
         self.slider_widget.setGeometry(QtCore.QRect(97, 49, 2, 658))
         self.slider_widget.setStyleSheet("background-color: #2F2F2F;")
         self.slider_widget.setObjectName("slider_widget")
-        
-        
         self.aboutUsSlider_widget = QtWidgets.QWidget(self.slider_widget)
         self.aboutUsSlider_widget.setGeometry(QtCore.QRect(0, 444, 2, 54))
         self.aboutUsSlider_widget.setStyleSheet("background-color: #0083FF;")
         self.aboutUsSlider_widget.setObjectName("aboutUsSlider_widget")
-        
-        
         self.revertSlider_widget = QtWidgets.QWidget(self.slider_widget)
         self.revertSlider_widget.setGeometry(QtCore.QRect(0, 160, 2, 54))
         self.revertSlider_widget.setStyleSheet("background-color: #0083FF;")
         self.revertSlider_widget.setObjectName("revertSlider_widget")
-        
-        
         self.explorerSlider_widget = QtWidgets.QWidget(self.slider_widget)
         self.explorerSlider_widget.setGeometry(QtCore.QRect(0, 302, 2, 54))
         self.explorerSlider_widget.setStyleSheet("background-color: #0083FF;")
         self.explorerSlider_widget.setObjectName("explorerSlider_widget")
-        
-        
         self.helpSlider_widget = QtWidgets.QWidget(self.slider_widget)
         self.helpSlider_widget.setGeometry(QtCore.QRect(0, 373, 2, 54))
         self.helpSlider_widget.setStyleSheet("background-color: #0083FF;")
         self.helpSlider_widget.setObjectName("helpSlider_widget")
-       
-       
         self.adjustSlider_widget = QtWidgets.QWidget(self.slider_widget)
         self.adjustSlider_widget.setGeometry(QtCore.QRect(0, 232, 2, 54))
         self.adjustSlider_widget.setStyleSheet("background-color: #0083FF;")
         self.adjustSlider_widget.setObjectName("adjustSlider_widget")
-     
-     
         self.adjust_button = QtWidgets.QPushButton(self.background_widget)
         self.adjust_button.setGeometry(QtCore.QRect(40, 296, 21, 21))
         self.adjust_button.setStyleSheet("QPushButton {\n"
-                                        "    qproperty-icon: url(\" \"); /* empty image */\n"
-                                        "    qproperty-iconSize: 16px 16px; /* space for the background image */\n"
-                                        "    border-image: url(:/img/Images/01_adjust_0.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "    border: none;\n"
-                                        "    background-color: rgbaa(255,255,255,0);\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "       border-image: url(:/img/Images/01_adjust_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "      border-image: url(:/img/Images/01_adjust_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}")
+"    qproperty-icon: url(\" \"); /* empty image */\n"
+"    qproperty-iconSize: 16px 16px; /* space for the background image */\n"
+"    border-image: url(:/img/Images/01_adjust_0.png);\n"
+"    background-repeat: no-repeat;\n"
+"    border: none;\n"
+"    background-color: rgbaa(255,255,255,0);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"       border-image: url(:/img/Images/01_adjust_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"      border-image: url(:/img/Images/01_adjust_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.adjust_button.setText("")
         self.adjust_button.setObjectName("adjust_button")
-        
-        
         self.help_button = QtWidgets.QPushButton(self.background_widget)
         self.help_button.setGeometry(QtCore.QRect(38, 435, 28, 29))
         self.help_button.setStyleSheet("QPushButton {\n"
-                                        "    qproperty-icon: url(\" \"); /* empty image */\n"
-                                        "    qproperty-iconSize: 16px 16px; /* space for the background image */\n"
-                                        "    border-image: url(:/img/Images/01_location_0.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    border: none;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "     border-image: url(:/img/Images/01_location_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    border-image: url(:/img/Images/01_location_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}")
+"    qproperty-icon: url(\" \"); /* empty image */\n"
+"    qproperty-iconSize: 16px 16px; /* space for the background image */\n"
+"    border-image: url(:/img/Images/01_location_0.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    border: none;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"     border-image: url(:/img/Images/01_location_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-image: url(:/img/Images/01_location_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.help_button.setText("")
         self.help_button.setObjectName("help_button")
-       
-       
         self.explorer_button = QtWidgets.QPushButton(self.background_widget)
         self.explorer_button.setGeometry(QtCore.QRect(40, 366, 23, 23))
         self.explorer_button.setStyleSheet("QPushButton {\n"
-                                        "    qproperty-icon: url(\" \"); /* empty image */\n"
-                                        "    qproperty-iconSize: 16px 16px; /* space for the background image */\n"
-                                        "    border-image: url(:/img/Images/01_spiral_0.png);\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "    border: none;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "    border-image: url(:/img/Images/01_spiral_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "    border-image: url(:/img/Images/01_spiral_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}")
+"    qproperty-icon: url(\" \"); /* empty image */\n"
+"    qproperty-iconSize: 16px 16px; /* space for the background image */\n"
+"    border-image: url(:/img/Images/01_spiral_0.png);\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    background-repeat: no-repeat;\n"
+"    border: none;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    border-image: url(:/img/Images/01_spiral_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-image: url(:/img/Images/01_spiral_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.explorer_button.setText("")
         self.explorer_button.setObjectName("explorer_button")
-       
-       
         self.aboutUs_button = QtWidgets.QPushButton(self.background_widget)
         self.aboutUs_button.setGeometry(QtCore.QRect(41, 507, 26, 26))
         self.aboutUs_button.setStyleSheet("QPushButton {\n"
-                                        "    qproperty-icon: url(\" \"); \n"
-                                        "    qproperty-iconSize: 16px 16px; \n"
-                                        "    border-image: url(:/img/Images/01_globe_0.png);\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "    border: none;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "       border-image: url(:/img/Images/01_globe_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "       border-image: url(:/img/Images/01_globe_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}")
+"    qproperty-icon: url(\" \"); \n"
+"    qproperty-iconSize: 16px 16px; \n"
+"    border-image: url(:/img/Images/01_globe_0.png);\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    background-repeat: no-repeat;\n"
+"    border: none;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"       border-image: url(:/img/Images/01_globe_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"       border-image: url(:/img/Images/01_globe_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.aboutUs_button.setText("")
         self.aboutUs_button.setObjectName("aboutUs_button")
-        
-        
         self.revert_button = QtWidgets.QPushButton(self.background_widget)
         self.revert_button.setGeometry(QtCore.QRect(36, 225, 25, 23))
         self.revert_button.setStyleSheet("\n"
-                                        "QPushButton {\n"
-                                        "    qproperty-icon: url(\" \"); /* empty image */\n"
-                                        "    qproperty-iconSize: 16px 16px; /* space for the background image */\n"
-                                        "    border-image: url(:/img/Images/01_revert_0.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "    background-color:rgba(255,255,255,0);\n"
-                                        "    border: none;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "       border-image: url(:/img/Images/01_revert_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}\n"
-                                        "\n"
-                                        "QPushButton:pressed {\n"
-                                        "       border-image: url(:/img/Images/01_revert_1.png);\n"
-                                        "    background-repeat: no-repeat;\n"
-                                        "}")
+"QPushButton {\n"
+"    qproperty-icon: url(\" \"); /* empty image */\n"
+"    qproperty-iconSize: 16px 16px; /* space for the background image */\n"
+"    border-image: url(:/img/Images/01_revert_0.png);\n"
+"    background-repeat: no-repeat;\n"
+"    background-color:rgba(255,255,255,0);\n"
+"    border: none;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"       border-image: url(:/img/Images/01_revert_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"       border-image: url(:/img/Images/01_revert_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.revert_button.setText("")
         self.revert_button.setIconSize(QtCore.QSize(16, 16))
         self.revert_button.setFlat(False)
         self.revert_button.setObjectName("revert_button")
-       
-       
         self.githubLink_button = QtWidgets.QPushButton(self.background_widget)
         self.githubLink_button.setGeometry(QtCore.QRect(22, 638, 61, 61))
         self.githubLink_button.setStyleSheet("border: none;\n"
-                                        "background-color:rgba(255,255,255,0);\n"
-                                        "")
+"background-color:rgba(255,255,255,0);\n"
+"")
         self.githubLink_button.setText("")
-       
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap(":/img/Images/03_github.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         icon1.addPixmap(QtGui.QPixmap(":/img/Images/03_github.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-        
         self.githubLink_button.setIcon(icon1)
         self.githubLink_button.setIconSize(QtCore.QSize(58, 58))
         self.githubLink_button.setObjectName("githubLink_button")
-        
-        
         self.objects_groupBox = QtWidgets.QGroupBox(self.background_widget)
-        self.objects_groupBox.setGeometry(QtCore.QRect(970, 485, 381, 121))
+        self.objects_groupBox.setGeometry(QtCore.QRect(970, 470, 381, 126))
         self.objects_groupBox.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-                                        "border: none;")
+"border: none;")
         self.objects_groupBox.setTitle("")
         self.objects_groupBox.setAlignment(QtCore.Qt.AlignCenter)
         self.objects_groupBox.setFlat(False)
         self.objects_groupBox.setObjectName("objects_groupBox")
-        
-        
-        self.truck_label = QtWidgets.QLabel(self.objects_groupBox)
-        self.truck_label.setGeometry(QtCore.QRect(55, 74, 61, 31))
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(11)
-        self.truck_label.setFont(font)
-        self.truck_label.setStyleSheet("color: #FFFFFF;")
-        self.truck_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.truck_label.setObjectName("truck_label")
-       
-       
-        self.animal_label = QtWidgets.QLabel(self.objects_groupBox)
-        self.animal_label.setGeometry(QtCore.QRect(258, -3, 71, 31))
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(11)
-        self.animal_label.setFont(font)
-        self.animal_label.setStyleSheet("color: #FFFFFF;")
-        self.animal_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.animal_label.setObjectName("animal_label")
-        
-        
-        self.cycle_label = QtWidgets.QLabel(self.objects_groupBox)
-        self.cycle_label.setGeometry(QtCore.QRect(258, 36, 61, 31))
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(11)
-        self.cycle_label.setFont(font)
-        self.cycle_label.setStyleSheet("color: #FFFFFF;")
-        self.cycle_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.cycle_label.setObjectName("cycle_label")
-        
-        
-        self.trafficSign_label = QtWidgets.QLabel(self.objects_groupBox)
-        self.trafficSign_label.setGeometry(QtCore.QRect(256, 67, 111, 41))
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(11)
-        self.trafficSign_label.setFont(font)
-        self.trafficSign_label.setStyleSheet("color: #FFFFFF;\n"
-                                        "border-radius: 20px;\n"
-                                        "background-color: rgba(228, 228, 228, 0.04);\n"
-                                        "")
-        self.trafficSign_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.trafficSign_label.setObjectName("trafficSign_label")
-       
-       
-       
-        self.car_label = QtWidgets.QLabel(self.objects_groupBox)
-        self.car_label.setGeometry(QtCore.QRect(52, -1, 51, 31))
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(11)
-        font.setBold(False)
-        font.setWeight(50)
-        self.car_label.setFont(font)
-        self.car_label.setStyleSheet("color: #FFFFFF;")
-        self.car_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.car_label.setObjectName("car_label")
-        
-        
-        
         self.blue_truck_widget = QtWidgets.QWidget(self.objects_groupBox)
-        self.blue_truck_widget.setGeometry(QtCore.QRect(18, 82, 16, 16))
+        self.blue_truck_widget.setGeometry(QtCore.QRect(18, 86, 16, 16))
         self.blue_truck_widget.setStyleSheet("border-image: url(:/img/Images/11_blue.png);")
         self.blue_truck_widget.setObjectName("blue_truck_widget")
-       
-       
-       
         self.green_person_widget = QtWidgets.QWidget(self.objects_groupBox)
-        self.green_person_widget.setGeometry(QtCore.QRect(18, 45, 16, 16))
+        self.green_person_widget.setGeometry(QtCore.QRect(18, 49, 16, 16))
         self.green_person_widget.setStyleSheet("\n"
-                                        "border-image: url(:/img/Images/11_green.png);")
+"border-image: url(:/img/Images/11_green.png);")
         self.green_person_widget.setObjectName("green_person_widget")
-     
-     
-     
-        self.person_label = QtWidgets.QLabel(self.objects_groupBox)
-        self.person_label.setGeometry(QtCore.QRect(57, 37, 71, 31))
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(11)
-        self.person_label.setFont(font)
-        self.person_label.setStyleSheet("color: #FFFFFF;")
-        self.person_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.person_label.setObjectName("person_label")
-       
-       
-       
         self.red_car_widget = QtWidgets.QWidget(self.objects_groupBox)
-        self.red_car_widget.setGeometry(QtCore.QRect(18, 8, 16, 16))
+        self.red_car_widget.setGeometry(QtCore.QRect(18, 12, 16, 16))
         self.red_car_widget.setStyleSheet("border-image: url(:/img/Images/11_red.png);\n"
 "")
         self.red_car_widget.setObjectName("red_car_widget")
-      
-      
-      
         self.yellow_animal_widget = QtWidgets.QWidget(self.objects_groupBox)
-        self.yellow_animal_widget.setGeometry(QtCore.QRect(222, 7, 16, 16))
+        self.yellow_animal_widget.setGeometry(QtCore.QRect(222, 12, 16, 16))
         self.yellow_animal_widget.setStyleSheet("border-image: url(:/img/Images/11_yellow.png);\n"
 "")
         self.yellow_animal_widget.setObjectName("yellow_animal_widget")
-      
-      
-      
         self.orange_cycle_widget = QtWidgets.QWidget(self.objects_groupBox)
-        self.orange_cycle_widget.setGeometry(QtCore.QRect(222, 45, 16, 16))
+        self.orange_cycle_widget.setGeometry(QtCore.QRect(222, 49, 16, 16))
         self.orange_cycle_widget.setStyleSheet("border-image: url(:/img/Images/11_orange.png);\n"
 "")
         self.orange_cycle_widget.setObjectName("orange_cycle_widget")
-      
-      
-      
         self.purple_trafficSign_widget = QtWidgets.QWidget(self.objects_groupBox)
-        self.purple_trafficSign_widget.setGeometry(QtCore.QRect(222, 82, 16, 16))
+        self.purple_trafficSign_widget.setGeometry(QtCore.QRect(222, 86, 16, 16))
         self.purple_trafficSign_widget.setStyleSheet("border-image: url(:/img/Images/11_purple.png);\n"
 "")
         self.purple_trafficSign_widget.setObjectName("purple_trafficSign_widget")
-      
-      
-      
+        self.car_button = QtWidgets.QPushButton(self.objects_groupBox)
+        self.car_button.setGeometry(QtCore.QRect(45, 0, 70, 38))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.car_button.setFont(font)
+        self.car_button.setStyleSheet("QPushButton {\n"
+"    color: #FFFFFF;\n"
+"    border-radius: 17px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}")
+        self.car_button.setObjectName("car_button")
+        self.animal_button = QtWidgets.QPushButton(self.objects_groupBox)
+        self.animal_button.setGeometry(QtCore.QRect(250, 0, 91, 38))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.animal_button.setFont(font)
+        self.animal_button.setStyleSheet("QPushButton {\n"
+"    color: #FFFFFF;\n"
+"    border-radius: 17px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}")
+        self.animal_button.setObjectName("animal_button")
+        self.person_button = QtWidgets.QPushButton(self.objects_groupBox)
+        self.person_button.setGeometry(QtCore.QRect(43, 38, 101, 38))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.person_button.setFont(font)
+        self.person_button.setStyleSheet("QPushButton {\n"
+"    color: #FFFFFF;\n"
+"    border-radius: 17px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}")
+        self.person_button.setObjectName("person_button")
+        self.truck_button = QtWidgets.QPushButton(self.objects_groupBox)
+        self.truck_button.setGeometry(QtCore.QRect(46, 76, 81, 38))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.truck_button.setFont(font)
+        self.truck_button.setStyleSheet("QPushButton {\n"
+"    color: #FFFFFF;\n"
+"    border-radius: 17px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}")
+        self.truck_button.setObjectName("truck_button")
+        self.cycle_button = QtWidgets.QPushButton(self.objects_groupBox)
+        self.cycle_button.setGeometry(QtCore.QRect(251, 39, 81, 38))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.cycle_button.setFont(font)
+        self.cycle_button.setStyleSheet("QPushButton {\n"
+"    color: #FFFFFF;\n"
+"    border-radius: 17px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}")
+        self.cycle_button.setObjectName("cycle_button")
+        self.trafficSign_button = QtWidgets.QPushButton(self.objects_groupBox)
+        self.trafficSign_button.setGeometry(QtCore.QRect(249, 76, 131, 38))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.trafficSign_button.setFont(font)
+        self.trafficSign_button.setStyleSheet("QPushButton {\n"
+"    color: #FFFFFF;\n"
+"    border-radius: 17px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(228, 228, 228, 0.04);\n"
+"}")
+        self.trafficSign_button.setObjectName("trafficSign_button")
         self.currentLog_button = QtWidgets.QPushButton(self.background_widget)
         self.currentLog_button.setGeometry(QtCore.QRect(978, 617, 111, 20))
         font = QtGui.QFont()
@@ -661,58 +606,49 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.currentLog_button.setFont(font)
         self.currentLog_button.setStyleSheet("\n"
-                                                "\n"
-                                                "QPushButton {\n"
-                                                "    border: none;\n"
-                                                "    color: #737373;\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:hover {\n"
-                                                "    color: #FFFFFF;\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:pressed {\n"
-                                                "    color: #737373;\n"
-                                                "}")
+"\n"
+"QPushButton {\n"
+"    border: none;\n"
+"    color: #737373;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    color: #FFFFFF;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    color: #737373;\n"
+"}")
         self.currentLog_button.setObjectName("currentLog_button")
-      
-      
-      
         self.currentLog_dropDown_button = QtWidgets.QPushButton(self.background_widget)
         self.currentLog_dropDown_button.setGeometry(QtCore.QRect(1088, 623, 13, 8))
         self.currentLog_dropDown_button.setStyleSheet("QPushButton {\n"
-                                                "    qproperty-icon: url(\" \"); \n"
-                                                "    qproperty-iconSize: 16px 16px;\n"
-                                                "  \n"
-                                                "    border-image: url(:/img/Images/12_dropdown_0.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "    border: none;\n"
-                                                "background-color: rgba(255,255,255,0);\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:hover {\n"
-                                                "   border-image: url(:/img/Images/12_dropdown_1.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:pressed {\n"
-                                                "    border-image: url(:/img/Images/12_dropdown_1.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}")
+"    qproperty-icon: url(\" \"); \n"
+"    qproperty-iconSize: 16px 16px;\n"
+"  \n"
+"    border-image: url(:/img/Images/12_dropdown_0.png);\n"
+"    background-repeat: no-repeat;\n"
+"    border: none;\n"
+"background-color: rgba(255,255,255,0);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"   border-image: url(:/img/Images/12_dropdown_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-image: url(:/img/Images/12_dropdown_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.currentLog_dropDown_button.setText("")
         self.currentLog_dropDown_button.setObjectName("currentLog_dropDown_button")
-     
-     
-     
         self.wifi_widget = QtWidgets.QWidget(self.background_widget)
         self.wifi_widget.setGeometry(QtCore.QRect(956, 50, 48, 48))
         self.wifi_widget.setStyleSheet("border-image: url(:/img/Images/08_wifi.png);\n"
-                                        "background-color: rgba(255,255,255,0);\n"
-                                        "border-radius: 16px;")
+"background-color: rgba(255,255,255,0);\n"
+"border-radius: 16px;")
         self.wifi_widget.setObjectName("wifi_widget")
-      
-      
-      
         self.location_textBrowser = QtWidgets.QTextBrowser(self.background_widget)
         self.location_textBrowser.setGeometry(QtCore.QRect(1021, 50, 141, 61))
         font = QtGui.QFont()
@@ -720,62 +656,50 @@ class Ui_MainWindow(object):
         font.setPointSize(11)
         self.location_textBrowser.setFont(font)
         self.location_textBrowser.setStyleSheet("background-color:rgba(255,255,255,0);\n"
-                                                "border:none;\n"
-                                                "color:#ffffff")
+"border:none;\n"
+"color:#ffffff")
         self.location_textBrowser.setObjectName("location_textBrowser")
-      
-      
-      
         self.backgroundTwo_label = QtWidgets.QLabel(self.background_widget)
         self.backgroundTwo_label.setGeometry(QtCore.QRect(0, 0, 943, 757))
         self.backgroundTwo_label.setStyleSheet("\n"
-                                        "background-color:rgba(61, 61, 61, 1);\n"
-                                        "border-top-left-radius:23px;\n"
-                                        "\n"
-                                        "border-bottom-left-radius:23px;")
+"background-color:rgba(61, 61, 61, 1);\n"
+"border-top-left-radius:23px;\n"
+"\n"
+"border-bottom-left-radius:23px;")
         self.backgroundTwo_label.setText("")
         self.backgroundTwo_label.setObjectName("backgroundTwo_label")
-      
-      
-      
         self.operationsPane_widget = QtWidgets.QWidget(self.background_widget)
         self.operationsPane_widget.setGeometry(QtCore.QRect(973, 146, 382, 241))
         self.operationsPane_widget.setStyleSheet("background: rgba(228, 228, 228, 0.1);\n"
-                                                "border: 1.3px solid rgba(255, 255, 255, 1);\n"
-                                                "border-radius:5px;")
+"border: 1.3px solid rgba(255, 255, 255, 1);\n"
+"border-radius:5px;")
         self.operationsPane_widget.setObjectName("operationsPane_widget")
-      
-      
-      
         self.operationsPane_groupBox = QtWidgets.QGroupBox(self.operationsPane_widget)
         self.operationsPane_groupBox.setGeometry(QtCore.QRect(0, 0, 381, 241))
         self.operationsPane_groupBox.setStyleSheet("border:none;\n"
-                                                "background-color:none;\n"
-                                                "color:rgb(255,255,255)")
+"background-color:none;\n"
+"color:rgb(255,255,255)")
         self.operationsPane_groupBox.setTitle("")
         self.operationsPane_groupBox.setObjectName("operationsPane_groupBox")
-      
-      
-      
         self.draw_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.draw_button.setGeometry(QtCore.QRect(40, 25, 55, 55))
         self.draw_button.setStyleSheet("QPushButton {\n"
-                                        "\n"
-                                        "    border-style: outset;\n"
-                                        "    background-color: #FF8400;\n"
-                                        "    border-radius: 23px;\n"
-                                        "   \n"
-                                        "    }\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "       /*border: 2px solid #000000;*/\n"
-                                        "    background-color: rgb(255,100,0);\n"
-                                        "    }\n"
-                                        "QPushButton:pressed {\n"
-                                        "    border-style: inset;\n"
-                                        "       background-color: #FF8400;\n"
-                                        "    }\n"
-                                        "")
+"\n"
+"    border-style: outset;\n"
+"    background-color: #FF8400;\n"
+"    border-radius: 23px;\n"
+"   \n"
+"    }\n"
+"\n"
+"QPushButton:hover {\n"
+"       /*border: 2px solid #000000;*/\n"
+"    background-color: rgb(255,100,0);\n"
+"    }\n"
+"QPushButton:pressed {\n"
+"    border-style: inset;\n"
+"       background-color: #FF8400;\n"
+"    }\n"
+"")
         self.draw_button.setText("")
         icon2 = QtGui.QIcon()
         icon2.addPixmap(QtGui.QPixmap(":/img/Images/09_draw.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -783,28 +707,25 @@ class Ui_MainWindow(object):
         self.draw_button.setIcon(icon2)
         self.draw_button.setIconSize(QtCore.QSize(24, 24))
         self.draw_button.setObjectName("draw_button")
-     
-     
-     
         self.zoom_in_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.zoom_in_button.setGeometry(QtCore.QRect(40, 130, 55, 55))
         self.zoom_in_button.setStyleSheet("QPushButton {\n"
-                                        "   \n"
-                                        "    border-style: outset;\n"
-                                        "    background-color: #548A56;\n"
-                                        "    border-radius:23px;\n"
-                                        "  \n"
-                                        "    }\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "     \n"
-                                        "     background-color: rgb(60,130,80);\n"
-                                        "    }\n"
-                                        "QPushButton:pressed {\n"
-                                        "    border-style: inset;\n"
-                                        "       background-color: #548A56;\n"
-                                        "    }\n"
-                                        "")
+"   \n"
+"    border-style: outset;\n"
+"    background-color: #548A56;\n"
+"    border-radius:23px;\n"
+"  \n"
+"    }\n"
+"\n"
+"QPushButton:hover {\n"
+"     \n"
+"     background-color: rgb(60,130,80);\n"
+"    }\n"
+"QPushButton:pressed {\n"
+"    border-style: inset;\n"
+"       background-color: #548A56;\n"
+"    }\n"
+"")
         self.zoom_in_button.setText("")
         icon3 = QtGui.QIcon()
         icon3.addPixmap(QtGui.QPixmap(":/img/Images/09_zoomin.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -813,9 +734,6 @@ class Ui_MainWindow(object):
         self.zoom_in_button.setIconSize(QtCore.QSize(24, 24))
         self.zoom_in_button.setShortcut("")
         self.zoom_in_button.setObjectName("zoom_in_button")
-      
-      
-      
         self.point_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.point_button.setGeometry(QtCore.QRect(164, 25, 55, 55))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
@@ -824,22 +742,22 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.point_button.sizePolicy().hasHeightForWidth())
         self.point_button.setSizePolicy(sizePolicy)
         self.point_button.setStyleSheet("QPushButton {\n"
-                                        "   \n"
-                                        "    border-style: outset;\n"
-                                        "    background-color: #0083FF;\n"
-                                        "    border-radius: 23px;\n"
-                                        "    \n"
-                                        "    }\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "     \n"
-                                        "     background-color: rgb(45,90,250);\n"
-                                        "    }\n"
-                                        "QPushButton:pressed {\n"
-                                        "    border-style: inset;\n"
-                                        "       background-color: #0083FF;\n"
-                                        "    }\n"
-                                        "")
+"   \n"
+"    border-style: outset;\n"
+"    background-color: #0083FF;\n"
+"    border-radius: 23px;\n"
+"    \n"
+"    }\n"
+"\n"
+"QPushButton:hover {\n"
+"     \n"
+"     background-color: rgb(45,90,250);\n"
+"    }\n"
+"QPushButton:pressed {\n"
+"    border-style: inset;\n"
+"       background-color: #0083FF;\n"
+"    }\n"
+"")
         self.point_button.setText("")
         icon4 = QtGui.QIcon()
         icon4.addPixmap(QtGui.QPixmap(":/img/Images/09_point.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -848,28 +766,25 @@ class Ui_MainWindow(object):
         self.point_button.setIconSize(QtCore.QSize(24, 24))
         self.point_button.setShortcut("")
         self.point_button.setObjectName("point_button")
-      
-      
-      
         self.undo_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.undo_button.setGeometry(QtCore.QRect(285, 25, 55, 55))
         self.undo_button.setStyleSheet("QPushButton {\n"
-                                        "    border-style: outset;\n"
-                                        "    background-color: #B944C4;\n"
-                                        "    border-radius: 23px;\n"
-                                        "   \n"
-                                        "    }\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "     background-color: rgb(160,50,180);\n"
-                                        "     \n"
-                                        "     \n"
-                                        "    }\n"
-                                        "QPushButton:pressed {\n"
-                                        "    border-style: inset;\n"
-                                        "       background-color: #B944C4;\n"
-                                        "    }\n"
-                                        "")
+"    border-style: outset;\n"
+"    background-color: #B944C4;\n"
+"    border-radius: 23px;\n"
+"   \n"
+"    }\n"
+"\n"
+"QPushButton:hover {\n"
+"     background-color: rgb(160,50,180);\n"
+"     \n"
+"     \n"
+"    }\n"
+"QPushButton:pressed {\n"
+"    border-style: inset;\n"
+"       background-color: #B944C4;\n"
+"    }\n"
+"")
         self.undo_button.setText("")
         icon5 = QtGui.QIcon()
         icon5.addPixmap(QtGui.QPixmap(":/img/Images/09_undo.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -878,28 +793,25 @@ class Ui_MainWindow(object):
         self.undo_button.setIconSize(QtCore.QSize(24, 24))
         self.undo_button.setShortcut("")
         self.undo_button.setObjectName("undo_button")
-       
-       
-       
         self.zoom_out_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.zoom_out_button.setGeometry(QtCore.QRect(164, 130, 55, 55))
         self.zoom_out_button.setStyleSheet("QPushButton {\n"
-                                        "    \n"
-                                        "    border-style: outset;\n"
-                                        "    background-color: #1DB158;\n"
-                                        "    border-radius: 23px;\n"
-                                        "    \n"
-                                        "    }\n"
-                                        "\n"
-                                        "QPushButton:hover {\n"
-                                        "     background-color: rgb(30,145,80);\n"
-                                        "     \n"
-                                        "    }\n"
-                                        "QPushButton:pressed {\n"
-                                        "    border-style: inset;\n"
-                                        "       background-color: #1DB158;\n"
-                                        "    }\n"
-                                        "")
+"    \n"
+"    border-style: outset;\n"
+"    background-color: #1DB158;\n"
+"    border-radius: 23px;\n"
+"    \n"
+"    }\n"
+"\n"
+"QPushButton:hover {\n"
+"     background-color: rgb(30,145,80);\n"
+"     \n"
+"    }\n"
+"QPushButton:pressed {\n"
+"    border-style: inset;\n"
+"       background-color: #1DB158;\n"
+"    }\n"
+"")
         self.zoom_out_button.setText("")
         icon6 = QtGui.QIcon()
         icon6.addPixmap(QtGui.QPixmap(":/img/Images/09_zoomout.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -908,27 +820,24 @@ class Ui_MainWindow(object):
         self.zoom_out_button.setIconSize(QtCore.QSize(24, 24))
         self.zoom_out_button.setShortcut("")
         self.zoom_out_button.setObjectName("zoom_out_button")
-    
-    
-    
         self.redo_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.redo_button.setGeometry(QtCore.QRect(285, 130, 55, 55))
         self.redo_button.setStyleSheet("QPushButton {\n"
-                                "    border-style: outset;\n"
-                                "    background-color: #48CAF3;\n"
-                                "    border-radius: 23px;\n"
-                                "  \n"
-                                "    }\n"
-                                "\n"
-                                "QPushButton:hover {\n"
-                                "     background-color: rgb(0,185,255);\n"
-                                "     \n"
-                                "    }\n"
-                                "QPushButton:pressed {\n"
-                                "    border-style: inset;\n"
-                                "       background-color: #48CAF3;\n"
-                                "    }\n"
-                                "")
+"    border-style: outset;\n"
+"    background-color: #48CAF3;\n"
+"    border-radius: 23px;\n"
+"  \n"
+"    }\n"
+"\n"
+"QPushButton:hover {\n"
+"     background-color: rgb(0,185,255);\n"
+"     \n"
+"    }\n"
+"QPushButton:pressed {\n"
+"    border-style: inset;\n"
+"       background-color: #48CAF3;\n"
+"    }\n"
+"")
         self.redo_button.setText("")
         icon7 = QtGui.QIcon()
         icon7.addPixmap(QtGui.QPixmap(":/img/Images/09_redo.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -937,9 +846,6 @@ class Ui_MainWindow(object):
         self.redo_button.setIconSize(QtCore.QSize(24, 24))
         self.redo_button.setShortcut("")
         self.redo_button.setObjectName("redo_button")
-      
-      
-      
         self.drawText_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.drawText_button.setGeometry(QtCore.QRect(42, 83, 51, 21))
         font = QtGui.QFont()
@@ -947,12 +853,9 @@ class Ui_MainWindow(object):
         font.setPointSize(11)
         self.drawText_button.setFont(font)
         self.drawText_button.setStyleSheet("border:none;\n"
-                                        "background-color:none;\n"
-                                        "color:rgb(255,255,255)")
+"background-color:none;\n"
+"color:rgb(255,255,255)")
         self.drawText_button.setObjectName("drawText_button")
-      
-      
-      
         self.pointText_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.pointText_button.setGeometry(QtCore.QRect(167, 83, 51, 20))
         font = QtGui.QFont()
@@ -960,12 +863,9 @@ class Ui_MainWindow(object):
         font.setPointSize(11)
         self.pointText_button.setFont(font)
         self.pointText_button.setStyleSheet("border:none;\n"
-                                        "background-color:none;\n"
-                                        "color:rgb(255,255,255)")
+"background-color:none;\n"
+"color:rgb(255,255,255)")
         self.pointText_button.setObjectName("pointText_button")
-       
-       
-       
         self.undoText_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.undoText_button.setGeometry(QtCore.QRect(287, 83, 51, 23))
         font = QtGui.QFont()
@@ -973,11 +873,8 @@ class Ui_MainWindow(object):
         font.setPointSize(11)
         self.undoText_button.setFont(font)
         self.undoText_button.setStyleSheet("border:none;\n"
-                                        "background-color:none;")
+"background-color:none;")
         self.undoText_button.setObjectName("undoText_button")
-      
-      
-      
         self.zoom_outText_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.zoom_outText_button.setGeometry(QtCore.QRect(148, 187, 91, 23))
         font = QtGui.QFont()
@@ -985,12 +882,9 @@ class Ui_MainWindow(object):
         font.setPointSize(11)
         self.zoom_outText_button.setFont(font)
         self.zoom_outText_button.setStyleSheet("border:none;\n"
-                                                "background-color:none;\n"
-                                                "color:rgb(255,255,255)")
+"background-color:none;\n"
+"color:rgb(255,255,255)")
         self.zoom_outText_button.setObjectName("zoom_outText_button")
-        
-        
-        
         self.redoText_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.redoText_button.setGeometry(QtCore.QRect(287, 187, 51, 23))
         font = QtGui.QFont()
@@ -998,11 +892,8 @@ class Ui_MainWindow(object):
         font.setPointSize(11)
         self.redoText_button.setFont(font)
         self.redoText_button.setStyleSheet("border:none;\n"
-                                        "background-color:none;")
+"background-color:none;")
         self.redoText_button.setObjectName("redoText_button")
-       
-       
-       
         self.zoom_inText_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.zoom_inText_button.setGeometry(QtCore.QRect(32, 187, 71, 23))
         font = QtGui.QFont()
@@ -1010,13 +901,10 @@ class Ui_MainWindow(object):
         font.setPointSize(11)
         self.zoom_inText_button.setFont(font)
         self.zoom_inText_button.setStyleSheet("border:none;\n"
-                                                "background-color:none;\n"
-                                                "color:rgb(255,255,255)\n"
-                                                "")
+"background-color:none;\n"
+"color:rgb(255,255,255)\n"
+"")
         self.zoom_inText_button.setObjectName("zoom_inText_button")
-      
-      
-      
         self.expandPane_button = QtWidgets.QPushButton(self.operationsPane_groupBox)
         self.expandPane_button.setGeometry(QtCore.QRect(180, 215, 21, 21))
         self.expandPane_button.setText("")
@@ -1025,9 +913,6 @@ class Ui_MainWindow(object):
         icon8.addPixmap(QtGui.QPixmap(":/img/Images/10_uparrow.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         self.expandPane_button.setIcon(icon8)
         self.expandPane_button.setObjectName("expandPane_button")
-       
-       
-       
         self.counter_label = QtWidgets.QLabel(self.background_widget)
         self.counter_label.setGeometry(QtCore.QRect(714, 103, 181, 41))
         font = QtGui.QFont()
@@ -1037,21 +922,15 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.counter_label.setFont(font)
         self.counter_label.setStyleSheet("color: #737373;\n"
-                                        "background-color: rgba(255,255,255,0);")
+"background-color: rgba(255,255,255,0);")
         self.counter_label.setObjectName("counter_label")
-        
-        
-        
         self.tracker_frame = QtWidgets.QFrame(self.background_widget)
         self.tracker_frame.setGeometry(QtCore.QRect(680, 109, 28, 28))
         self.tracker_frame.setStyleSheet("image: url(:/img/Images/05_tracker.png);\n"
-                                        "background-color: rgba(255,255,255,0);")
+"background-color: rgba(255,255,255,0);")
         self.tracker_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.tracker_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.tracker_frame.setObjectName("tracker_frame")
-     
-     
-     
         self.objectDetection_label = QtWidgets.QLabel(self.background_widget)
         self.objectDetection_label.setGeometry(QtCore.QRect(673, 74, 185, 29))
         font = QtGui.QFont()
@@ -1061,11 +940,8 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.objectDetection_label.setFont(font)
         self.objectDetection_label.setStyleSheet("color: #FFFFFF;\n"
-                                                "background-color: rgba(255,255,255,0);")
+"background-color: rgba(255,255,255,0);")
         self.objectDetection_label.setObjectName("objectDetection_label")
-        
-        
-        
         self.menuBar_toolButton = QtWidgets.QToolButton(self.background_widget)
         self.menuBar_toolButton.setGeometry(QtCore.QRect(865, 66, 28, 28))
         font = QtGui.QFont()
@@ -1075,39 +951,33 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.menuBar_toolButton.setFont(font)
         self.menuBar_toolButton.setStyleSheet("background-color: rgba(255,255,255,0);\n"
-                                                "border: none;\n"
-                                                "color: #FFFFFF;")
+"border: none;\n"
+"color: #FFFFFF;")
         self.menuBar_toolButton.setObjectName("menuBar_toolButton")
-        
-        
-        
         self.imgPath_prev1_button = QtWidgets.QPushButton(self.background_widget)
         self.imgPath_prev1_button.setGeometry(QtCore.QRect(137, 73, 18, 27))
         self.imgPath_prev1_button.setStyleSheet("QPushButton {\n"
-                                                "    \n"
-                                                "    qproperty-icon: url(\" \"); \n"
-                                                "    qproperty-iconSize: 8px 2px;\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "    border-image: url(:/img/Images/04_path_0.png);\n"
-                                                "    border: none;\n"
-                                                "    background-color: rgba(255,255,255,0);\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:hover {\n"
-                                                "      \n"
-                                                "    border-image: url(:/img/Images/04_path_1.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:pressed {\n"
-                                                "    border-image: url(:/img/Images/04_path_1.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}")
+"    \n"
+"    qproperty-icon: url(\" \"); \n"
+"    qproperty-iconSize: 8px 2px;\n"
+"    background-repeat: no-repeat;\n"
+"    border-image: url(:/img/Images/04_path_0.png);\n"
+"    border: none;\n"
+"    background-color: rgba(255,255,255,0);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"      \n"
+"    border-image: url(:/img/Images/04_path_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-image: url(:/img/Images/04_path_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.imgPath_prev1_button.setText("")
         self.imgPath_prev1_button.setObjectName("imgPath_prev1_button")
-       
-       
-       
         self.imgPath_label = QtWidgets.QLabel(self.background_widget)
         self.imgPath_label.setGeometry(QtCore.QRect(155, 65, 211, 41))
         font = QtGui.QFont()
@@ -1115,13 +985,10 @@ class Ui_MainWindow(object):
         font.setPointSize(19)
         self.imgPath_label.setFont(font)
         self.imgPath_label.setStyleSheet("color:rgba(255,255,255,255);\n"
-                                        "Font size: 34.5px;\n"
-                                        "background-color:none;\n"
-                                        "")
+"Font size: 34.5px;\n"
+"background-color:none;\n"
+"")
         self.imgPath_label.setObjectName("imgPath_label")
-        
-        
-        
         self.imgName_label = QtWidgets.QLabel(self.background_widget)
         self.imgName_label.setGeometry(QtCore.QRect(155, 100, 211, 41))
         font = QtGui.QFont()
@@ -1129,132 +996,108 @@ class Ui_MainWindow(object):
         font.setPointSize(21)
         self.imgName_label.setFont(font)
         self.imgName_label.setStyleSheet("color:rgba(115, 115, 115, 1);\n"
-                                        "background-color:none;\n"
-                                        "\n"
-                                        "")
+"background-color:none;\n"
+"\n"
+"")
         self.imgName_label.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.imgName_label.setObjectName("imgName_label")
-       
-       
-       
         self.imgPath_prev2_button = QtWidgets.QPushButton(self.background_widget)
         self.imgPath_prev2_button.setGeometry(QtCore.QRect(127, 80, 9, 14))
         self.imgPath_prev2_button.setStyleSheet("QPushButton {\n"
-                                                "    border-image: url(:/img/Images/04_path_0.png);\n"
-                                                "    qproperty-icon: url(\" \"); \n"
-                                                "    qproperty-iconSize: 8px 2px;\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "    border: none;\n"
-                                                "    background-color: rgba(255,255,255,0);\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:hover {\n"
-                                                "      \n"
-                                                "    border-image: url(:/img/Images/04_path_1.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:pressed {\n"
-                                                "    border-image: url(:/img/Images/04_path_1.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}")
+"    border-image: url(:/img/Images/04_path_0.png);\n"
+"    qproperty-icon: url(\" \"); \n"
+"    qproperty-iconSize: 8px 2px;\n"
+"    background-repeat: no-repeat;\n"
+"    border: none;\n"
+"    background-color: rgba(255,255,255,0);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"      \n"
+"    border-image: url(:/img/Images/04_path_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-image: url(:/img/Images/04_path_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.imgPath_prev2_button.setText("")
         self.imgPath_prev2_button.setObjectName("imgPath_prev2_button")
-        
-        
-        
         self.imgPath_dropDownHidden_button = QtWidgets.QPushButton(self.background_widget)
         self.imgPath_dropDownHidden_button.setGeometry(QtCore.QRect(363, 81, 13, 8))
         self.imgPath_dropDownHidden_button.setStyleSheet("QPushButton {\n"
-                                                "    qproperty-icon: url(\" \"); \n"
-                                                "    qproperty-iconSize: 16px 16px;\n"
-                                                "   border-image: url(\":/others/drop.png\");\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "    border: none;\n"
-                                                "    background-color: rgba(255,255,255,0);\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:hover {\n"
-                                                "      border-image: url(\":/others/drop2.png\");\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:pressed {\n"
-                                                "      border-image: url(\":/others/drop2.png\");\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}")
+"    qproperty-icon: url(\" \"); \n"
+"    qproperty-iconSize: 16px 16px;\n"
+"   border-image: url(\":/others/drop.png\");\n"
+"    background-repeat: no-repeat;\n"
+"    border: none;\n"
+"    background-color: rgba(255,255,255,0);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"      border-image: url(\":/others/drop2.png\");\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"      border-image: url(\":/others/drop2.png\");\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.imgPath_dropDownHidden_button.setText("")
         self.imgPath_dropDownHidden_button.setObjectName("imgPath_dropDownHidden_button")
-      
-      
-      
         self.imgPath_dropDown_button = QtWidgets.QPushButton(self.background_widget)
         self.imgPath_dropDown_button.setGeometry(QtCore.QRect(362, 83, 13, 8))
         self.imgPath_dropDown_button.setStyleSheet("QPushButton {\n"
-                                                "    qproperty-icon: url(\" \"); \n"
-                                                "    qproperty-iconSize: 16px 16px;\n"
-                                                "    border-image: url(:/img/Images/12_dropdown_0.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "    border: none;\n"
-                                                "    background-color: rgba(255,255,255,0);\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:hover {\n"
-                                                "    border-image: url(:/img/Images/12_dropdown_1.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}\n"
-                                                "\n"
-                                                "QPushButton:pressed {\n"
-                                                "    border-image: url(:/img/Images/12_dropdown_1.png);\n"
-                                                "    background-repeat: no-repeat;\n"
-                                                "}")
+"    qproperty-icon: url(\" \"); \n"
+"    qproperty-iconSize: 16px 16px;\n"
+"    border-image: url(:/img/Images/12_dropdown_0.png);\n"
+"    background-repeat: no-repeat;\n"
+"    border: none;\n"
+"    background-color: rgba(255,255,255,0);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    border-image: url(:/img/Images/12_dropdown_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-image: url(:/img/Images/12_dropdown_1.png);\n"
+"    background-repeat: no-repeat;\n"
+"}")
         self.imgPath_dropDown_button.setText("")
         self.imgPath_dropDown_button.setObjectName("imgPath_dropDown_button")
-       
-       
-       
         self.controlButtons_groupBox = QtWidgets.QGroupBox(self.background_widget)
         self.controlButtons_groupBox.setGeometry(QtCore.QRect(12, 14, 78, 20))
         self.controlButtons_groupBox.setStyleSheet("border-radius: 9px;\n"
-                                                "background-color: rgba(196, 196, 196, 0.08);\n"
-                                                "")
+"background-color: rgba(196, 196, 196, 0.08);\n"
+"")
         self.controlButtons_groupBox.setTitle("")
         self.controlButtons_groupBox.setObjectName("controlButtons_groupBox")
-        
-        
-        
         self.close_button = QtWidgets.QPushButton(self.background_widget)
         self.close_button.setGeometry(QtCore.QRect(16, 16, 15, 15))
         self.close_button.setStyleSheet("border-radius: 7px;\n"
-                                        "background-color: rgba(189, 14, 14, 0.54);\n"
-                                        "")
+"background-color: rgba(189, 14, 14, 0.54);\n"
+"")
         self.close_button.setText("")
         self.close_button.setObjectName("close_button")
-        
-        
-        
         self.maximize_restore_button = QtWidgets.QPushButton(self.background_widget)
         self.maximize_restore_button.setGeometry(QtCore.QRect(43, 16, 15, 15))
         self.maximize_restore_button.setStyleSheet("border-radius: 7px;\n"
-                                                "background-color: rgba(255, 215, 75, 0.6);\n"
-                                                "\n"
-                                                "")
+"background-color: rgba(255, 215, 75, 0.6);\n"
+"\n"
+"")
         self.maximize_restore_button.setText("")
         self.maximize_restore_button.setObjectName("maximize_restore_button")
-        
-        
-        
         self.minimize_button = QtWidgets.QPushButton(self.background_widget)
         self.minimize_button.setGeometry(QtCore.QRect(69, 16, 15, 15))
         self.minimize_button.setStyleSheet("border-radius: 7px;\n"
-                                        "background-color: rgba(68, 223, 83, 0.52);\n"
-                                        "\n"
-                                        "")
+"background-color: rgba(68, 223, 83, 0.52);\n"
+"\n"
+"")
         self.minimize_button.setText("")
         self.minimize_button.setObjectName("minimize_button")
-        
-        
-        
         self.backgroundTwo_label.raise_()
         self.img2_button.raise_()
         self.logo_widget.raise_()
@@ -1312,37 +1155,37 @@ class Ui_MainWindow(object):
         self.date_label.setText(_translate("MainWindow", "  14th August, 2021"))
         self.nextImg_label.setText(_translate("MainWindow", "NEXT IMAGES"))
         self.coordinates2_textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-                                                                        "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-                                                                        "p, li { white-space: pre-wrap; }\n"
-                                                                        "</style></head><body style=\" font-family:\'Ebrima\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ff0000;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 1   52  45  180  125</span></p>\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ffff00;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 4   56  28  192  136</span></p>\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ffff00;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 8   12  53  172  125</span></p>\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ff0000;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 6   25  97  120  158</span></p></body></html>"))
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Ebrima\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ff0000;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 1   52  45  180  125</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ffff00;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 4   56  28  192  136</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ffff00;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 8   12  53  172  125</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt; color:#ff0000;\">●</span><span style=\" font-size:7pt; color:#ffffff;\"> 6   25  97  120  158</span></p></body></html>"))
         self.coordinates1_textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-                                                                        "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-                                                                        "p, li { white-space: pre-wrap; }\n"
-                                                                        "</style></head><body style=\" font-family:\'Ebrima\'; font-size:7pt; font-weight:400; font-style:normal;\">\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#06dc8e;\">●</span><span style=\" font-size:6pt; color:#005500;\"> </span><span style=\" color:#ffffff;\">1   32  45  170  185</span></p>\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#ff0000;\">●</span><span style=\" font-size:6pt; color:#aaaa7f;\"> </span><span style=\" color:#ffffff;\">4   25  89  180  172</span></p>\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#05e198;\">●</span><span style=\" font-size:6pt; color:#ffffff;\"> </span><span style=\" color:#ffffff;\">8   28  65  789  147</span></p>\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#ff0000;\">●</span><span style=\" font-size:6pt; color:#aaffff;\"> </span><span style=\" color:#ffffff;\">6   25  97  120  158</span></p></body></html>"))
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Ebrima\'; font-size:7pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#06dc8e;\">●</span><span style=\" font-size:6pt; color:#005500;\"> </span><span style=\" color:#ffffff;\">1   32  45  170  185</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#ff0000;\">●</span><span style=\" font-size:6pt; color:#aaaa7f;\"> </span><span style=\" color:#ffffff;\">4   25  89  180  172</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#05e198;\">●</span><span style=\" font-size:6pt; color:#ffffff;\"> </span><span style=\" color:#ffffff;\">8   28  65  789  147</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:6pt; color:#ff0000;\">●</span><span style=\" font-size:6pt; color:#aaffff;\"> </span><span style=\" color:#ffffff;\">6   25  97  120  158</span></p></body></html>"))
         self.nextImg_button.setText(_translate("MainWindow", "+"))
         self.prevImg_button.setText(_translate("MainWindow", "-"))
         self.saveInfo_label.setText(_translate("MainWindow", "   abcdefgh.txt saved successfully!"))
-        self.truck_label.setText(_translate("MainWindow", "Truck"))
-        self.animal_label.setText(_translate("MainWindow", "Animal"))
-        self.cycle_label.setText(_translate("MainWindow", "Cycle"))
-        self.trafficSign_label.setText(_translate("MainWindow", "Traffic Sign"))
-        self.car_label.setText(_translate("MainWindow", "Car"))
-        self.person_label.setText(_translate("MainWindow", "Person"))
+        self.car_button.setText(_translate("MainWindow", "Car"))
+        self.animal_button.setText(_translate("MainWindow", "Animal"))
+        self.person_button.setText(_translate("MainWindow", "Person"))
+        self.truck_button.setText(_translate("MainWindow", "Truck"))
+        self.cycle_button.setText(_translate("MainWindow", "Cycle"))
+        self.trafficSign_button.setText(_translate("MainWindow", "Traffic Sign"))
         self.currentLog_button.setText(_translate("MainWindow", "CURRENT LOG"))
         self.location_textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-                                                                        "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-                                                                        "p, li { white-space: pre-wrap; }\n"
-                                                                        "</style></head><body style=\" font-family:\'Arial\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:15pt;\">Kolkata</span></p>\n"
-                                                                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">India</span></p></body></html>"))
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Arial\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:15pt;\">Kolkata</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">India</span></p></body></html>"))
         self.drawText_button.setText(_translate("MainWindow", "Draw"))
         self.pointText_button.setText(_translate("MainWindow", "Point"))
         self.undoText_button.setText(_translate("MainWindow", "Undo"))

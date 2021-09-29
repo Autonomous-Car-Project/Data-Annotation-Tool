@@ -152,16 +152,6 @@ class Ui_MainWindow(object):
 "\n"
 "")
         self.date_label.setObjectName("date_label")
-        self.imgPreview_widget = QtWidgets.QWidget(self.background_widget)
-        self.imgPreview_widget.setGeometry(QtCore.QRect(205, 202, 639, 359))
-        font = QtGui.QFont()
-        font.setPointSize(18)
-        self.imgPreview_widget.setFont(font)
-        self.imgPreview_widget.setStyleSheet("image: url(:/img/Images/06_img1.png);\n"
-"background-color:rgba(255,255,255,0);\n"
-"border:none;\n"
-"")
-        self.imgPreview_widget.setObjectName("imgPreview_widget")
         self.arrowNextImg_button = QtWidgets.QPushButton(self.background_widget)
         self.arrowNextImg_button.setGeometry(QtCore.QRect(857, 665, 41, 41))
         font = QtGui.QFont()
@@ -1092,6 +1082,13 @@ class Ui_MainWindow(object):
         self.time_label.setStyleSheet("color: #ffffff;\n"
 "")
         self.time_label.setObjectName("time_label")
+        self.imgPreview_label = QtWidgets.QLabel(self.background_widget)
+        self.imgPreview_label.setGeometry(QtCore.QRect(202, 202, 639, 359))
+        self.imgPreview_label.setStyleSheet("border-image: url(:/img/Images/06_img1.png);\n"
+"border-radius: 0px")
+        self.imgPreview_label.setText("")
+        self.imgPreview_label.setIndent(-1)
+        self.imgPreview_label.setObjectName("imgPreview_label")
         self.backgroundTwo_label.raise_()
         self.img2_button.raise_()
         self.logo_widget.raise_()
@@ -1101,7 +1098,6 @@ class Ui_MainWindow(object):
         self.imgFrame1_button.raise_()
         self.imgFrame2_button.raise_()
         self.date_label.raise_()
-        self.imgPreview_widget.raise_()
         self.arrowNextImg_button.raise_()
         self.nextImg_label.raise_()
         self.currentLogCoordinates_widget.raise_()
@@ -1137,6 +1133,7 @@ class Ui_MainWindow(object):
         self.locationCity_label.raise_()
         self.locationCountry_label.raise_()
         self.time_label.raise_()
+        self.imgPreview_label.raise_()
         self.verticalLayout.addWidget(self.background_widget)
         MainWindow.setCentralWidget(self.centralwidget)
 

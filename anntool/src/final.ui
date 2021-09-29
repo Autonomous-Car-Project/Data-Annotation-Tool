@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1383</width>
-    <height>758</height>
+    <height>757</height>
    </rect>
   </property>
   <property name="font">
@@ -227,40 +227,6 @@ QPushButton:pressed{
         <string/>
        </property>
       </widget>
-      <widget class="QTimeEdit" name="timeEdit">
-       <property name="geometry">
-        <rect>
-         <x>1209</x>
-         <y>35</y>
-         <width>161</width>
-         <height>65</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Arial</family>
-         <pointsize>37</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgba(255,255,255,0);
-border:none;
-color:rgba(255,255,255,255);</string>
-       </property>
-       <property name="buttonSymbols">
-        <enum>QAbstractSpinBox::NoButtons</enum>
-       </property>
-       <property name="displayFormat">
-        <string>hh:mm</string>
-       </property>
-       <property name="time">
-        <time>
-         <hour>10</hour>
-         <minute>36</minute>
-         <second>0</second>
-        </time>
-       </property>
-      </widget>
       <widget class="QLabel" name="date_label">
        <property name="geometry">
         <rect>
@@ -285,27 +251,6 @@ color:rgba(255,255,255,255);
        </property>
        <property name="text">
         <string>  14th August, 2021</string>
-       </property>
-      </widget>
-      <widget class="QWidget" name="imgPreview_widget" native="true">
-       <property name="geometry">
-        <rect>
-         <x>205</x>
-         <y>202</y>
-         <width>639</width>
-         <height>359</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>18</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">image: url(:/img/Images/06_img1.png);
-background-color:rgba(255,255,255,0);
-border:none;
-</string>
        </property>
       </widget>
       <widget class="QPushButton" name="arrowNextImg_button">
@@ -389,72 +334,51 @@ background-color:none;
          <x>982</x>
          <y>645</y>
          <width>361</width>
-         <height>77</height>
+         <height>79</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color:#737373;
 border-radius:10px;</string>
        </property>
-       <widget class="QTextEdit" name="coordinates2_textEdit">
+       <widget class="QLabel" name="coordinates1_label">
         <property name="geometry">
          <rect>
-          <x>215</x>
-          <y>5</y>
-          <width>141</width>
+          <x>30</x>
+          <y>0</y>
+          <width>111</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:1px; margin-left:1.5px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:6pt; color:#06dc8e;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffffff;&quot;&gt; 1  32  45  170  185&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:1.5px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:6pt; color:#ff0000;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffffff;&quot;&gt; 4  25  89  180  172&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:1px; margin-left:1.5px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:6pt; color:#05e198;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffffff;&quot;&gt; 8  28  65  789  147&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1px; margin-bottom:12px; margin-left:1.5px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:6pt; color:#ff0000;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffffff;&quot;&gt; 6  25  97  120  158&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="coordinates2_label">
+        <property name="geometry">
+         <rect>
+          <x>217</x>
+          <y>6</y>
+          <width>121</width>
           <height>71</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <family>Ebrima</family>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color:rgba(255,255,255,0);
-border:20px
-</string>
-        </property>
-        <property name="html">
+        <property name="text">
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ebrima'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#ff0000;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt; 1   52  45  180  125&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#ffff00;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt; 4   56  28  192  136&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#ffff00;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt; 8   12  53  172  125&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#ff0000;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt; 6   25  97  120  158&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QTextEdit" name="coordinates1_textEdit">
-        <property name="geometry">
-         <rect>
-          <x>22</x>
-          <y>5</y>
-          <width>161</width>
-          <height>75</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Ebrima</family>
-          <pointsize>7</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color:rgba(255,255,255,0);
-border:15px
-</string>
-        </property>
-        <property name="html">
-         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ebrima'; font-size:7pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt; color:#06dc8e;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-size:6pt; color:#005500;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;1   32  45  170  185&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt; color:#ff0000;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-size:6pt; color:#aaaa7f;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;4   25  89  180  172&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt; color:#05e198;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-size:6pt; color:#ffffff;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;8   28  65  789  147&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt; color:#ff0000;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-size:6pt; color:#aaffff;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;6   25  97  120  158&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:1.5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ff0000;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffffff;&quot;&gt; 1   52  45  180  125&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1.5px; margin-bottom:1.5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffff00;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffffff;&quot;&gt; 4   56  28  192  136&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1.5px; margin-bottom:1.5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffff00;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffffff;&quot;&gt; 8   12  53  172  125&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:1.5px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ff0000;&quot;&gt;●&lt;/span&gt;&lt;span style=&quot; font-family:'Ebrima'; font-size:7pt; color:#ffffff;&quot;&gt; 6   25  97  120  158&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
       </widget>
@@ -843,9 +767,9 @@ background-color:rgba(255,255,255,0);
        <property name="geometry">
         <rect>
          <x>970</x>
-         <y>485</y>
+         <y>470</y>
          <width>381</width>
-         <height>121</height>
+         <height>126</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -861,141 +785,11 @@ border: none;</string>
        <property name="flat">
         <bool>false</bool>
        </property>
-       <widget class="QLabel" name="truck_label">
-        <property name="geometry">
-         <rect>
-          <x>55</x>
-          <y>74</y>
-          <width>61</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>11</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #FFFFFF;</string>
-        </property>
-        <property name="text">
-         <string>Truck</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="animal_label">
-        <property name="geometry">
-         <rect>
-          <x>258</x>
-          <y>-3</y>
-          <width>71</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>11</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #FFFFFF;</string>
-        </property>
-        <property name="text">
-         <string>Animal</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="cycle_label">
-        <property name="geometry">
-         <rect>
-          <x>258</x>
-          <y>36</y>
-          <width>61</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>11</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #FFFFFF;</string>
-        </property>
-        <property name="text">
-         <string>Cycle</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="trafficSign_label">
-        <property name="geometry">
-         <rect>
-          <x>256</x>
-          <y>67</y>
-          <width>111</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>11</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #FFFFFF;
-border-radius: 20px;
-background-color: rgba(228, 228, 228, 0.04);
-</string>
-        </property>
-        <property name="text">
-         <string>Traffic Sign</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="car_label">
-        <property name="geometry">
-         <rect>
-          <x>52</x>
-          <y>-1</y>
-          <width>51</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>11</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #FFFFFF;</string>
-        </property>
-        <property name="text">
-         <string>Car</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
        <widget class="QWidget" name="blue_truck_widget" native="true">
         <property name="geometry">
          <rect>
           <x>18</x>
-          <y>82</y>
+          <y>86</y>
           <width>16</width>
           <height>16</height>
          </rect>
@@ -1008,7 +802,7 @@ background-color: rgba(228, 228, 228, 0.04);
         <property name="geometry">
          <rect>
           <x>18</x>
-          <y>45</y>
+          <y>49</y>
           <width>16</width>
           <height>16</height>
          </rect>
@@ -1018,36 +812,11 @@ background-color: rgba(228, 228, 228, 0.04);
 border-image: url(:/img/Images/11_green.png);</string>
         </property>
        </widget>
-       <widget class="QLabel" name="person_label">
-        <property name="geometry">
-         <rect>
-          <x>57</x>
-          <y>37</y>
-          <width>71</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>11</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #FFFFFF;</string>
-        </property>
-        <property name="text">
-         <string>Person</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
        <widget class="QWidget" name="red_car_widget" native="true">
         <property name="geometry">
          <rect>
           <x>18</x>
-          <y>8</y>
+          <y>12</y>
           <width>16</width>
           <height>16</height>
          </rect>
@@ -1061,7 +830,7 @@ border-image: url(:/img/Images/11_green.png);</string>
         <property name="geometry">
          <rect>
           <x>222</x>
-          <y>7</y>
+          <y>12</y>
           <width>16</width>
           <height>16</height>
          </rect>
@@ -1075,7 +844,7 @@ border-image: url(:/img/Images/11_green.png);</string>
         <property name="geometry">
          <rect>
           <x>222</x>
-          <y>45</y>
+          <y>49</y>
           <width>16</width>
           <height>16</height>
          </rect>
@@ -1089,7 +858,7 @@ border-image: url(:/img/Images/11_green.png);</string>
         <property name="geometry">
          <rect>
           <x>222</x>
-          <y>82</y>
+          <y>86</y>
           <width>16</width>
           <height>16</height>
          </rect>
@@ -1097,6 +866,204 @@ border-image: url(:/img/Images/11_green.png);</string>
         <property name="styleSheet">
          <string notr="true">border-image: url(:/img/Images/11_purple.png);
 </string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="car_button">
+        <property name="geometry">
+         <rect>
+          <x>45</x>
+          <y>0</y>
+          <width>70</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #FFFFFF;
+	border-radius: 17px;
+}
+
+QPushButton:hover {
+	background-color: rgba(228, 228, 228, 0.04);
+}
+
+QPushButton:pressed {
+	background-color: rgba(228, 228, 228, 0.04);
+}</string>
+        </property>
+        <property name="text">
+         <string>Car</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="animal_button">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>0</y>
+          <width>91</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #FFFFFF;
+	border-radius: 17px;
+}
+
+QPushButton:hover {
+	background-color: rgba(228, 228, 228, 0.04);
+}
+
+QPushButton:pressed {
+	background-color: rgba(228, 228, 228, 0.04);
+}</string>
+        </property>
+        <property name="text">
+         <string>Animal</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="person_button">
+        <property name="geometry">
+         <rect>
+          <x>43</x>
+          <y>38</y>
+          <width>101</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #FFFFFF;
+	border-radius: 17px;
+}
+
+QPushButton:hover {
+	background-color: rgba(228, 228, 228, 0.04);
+}
+
+QPushButton:pressed {
+	background-color: rgba(228, 228, 228, 0.04);
+}</string>
+        </property>
+        <property name="text">
+         <string>Person</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="truck_button">
+        <property name="geometry">
+         <rect>
+          <x>46</x>
+          <y>76</y>
+          <width>81</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #FFFFFF;
+	border-radius: 17px;
+}
+
+QPushButton:hover {
+	background-color: rgba(228, 228, 228, 0.04);
+}
+
+QPushButton:pressed {
+	background-color: rgba(228, 228, 228, 0.04);
+}</string>
+        </property>
+        <property name="text">
+         <string>Truck</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cycle_button">
+        <property name="geometry">
+         <rect>
+          <x>251</x>
+          <y>39</y>
+          <width>81</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #FFFFFF;
+	border-radius: 17px;
+}
+
+QPushButton:hover {
+	background-color: rgba(228, 228, 228, 0.04);
+}
+
+QPushButton:pressed {
+	background-color: rgba(228, 228, 228, 0.04);
+}</string>
+        </property>
+        <property name="text">
+         <string>Cycle</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="trafficSign_button">
+        <property name="geometry">
+         <rect>
+          <x>249</x>
+          <y>76</y>
+          <width>131</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #FFFFFF;
+	border-radius: 17px;
+}
+
+QPushButton:hover {
+	background-color: rgba(228, 228, 228, 0.04);
+}
+
+QPushButton:pressed {
+	background-color: rgba(228, 228, 228, 0.04);
+}</string>
+        </property>
+        <property name="text">
+         <string>Traffic Sign</string>
         </property>
        </widget>
       </widget>
@@ -1186,35 +1153,6 @@ background-color: rgba(255,255,255,0);
 border-radius: 16px;</string>
        </property>
       </widget>
-      <widget class="QTextBrowser" name="location_textBrowser">
-       <property name="geometry">
-        <rect>
-         <x>1021</x>
-         <y>50</y>
-         <width>141</width>
-         <height>61</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Arial</family>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgba(255,255,255,0);
-border:none;
-color:#ffffff</string>
-       </property>
-       <property name="html">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:15pt;&quot;&gt;Kolkata&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;India&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="backgroundTwo_label">
        <property name="geometry">
         <rect>
@@ -1261,7 +1199,7 @@ border-radius:5px;</string>
         <property name="styleSheet">
          <string notr="true">border:none;
 background-color:none;
-color:rgba(255,255,255)</string>
+color:rgb(255,255,255)</string>
         </property>
         <property name="title">
          <string/>
@@ -1286,7 +1224,7 @@ color:rgba(255,255,255)</string>
 
 QPushButton:hover {
    	/*border: 2px solid #000000;*/
-    background-color: rgba(255,100,0);
+    background-color: rgb(255,100,0);
     }
 QPushButton:pressed {
     border-style: inset;
@@ -1329,7 +1267,7 @@ QPushButton:pressed {
 
 QPushButton:hover {
      
-     background-color: rgba(60,130,80);
+     background-color: rgb(60,130,80);
 	}
 QPushButton:pressed {
     border-style: inset;
@@ -1381,7 +1319,7 @@ QPushButton:pressed {
 
 QPushButton:hover {
      
-     background-color: rgba(45,90,250);
+     background-color: rgb(45,90,250);
 	}
 QPushButton:pressed {
     border-style: inset;
@@ -1425,7 +1363,7 @@ QPushButton:pressed {
     }
 
 QPushButton:hover {
-     background-color: rgba(160,50,180);
+     background-color: rgb(160,50,180);
      
      
 	}
@@ -1472,7 +1410,7 @@ QPushButton:pressed {
     }
 
 QPushButton:hover {
-     background-color: rgba(30,145,80);
+     background-color: rgb(30,145,80);
      
 	}
 QPushButton:pressed {
@@ -1517,7 +1455,7 @@ QPushButton:pressed {
     }
 
 QPushButton:hover {
-     background-color: rgba(0,185,255);
+     background-color: rgb(0,185,255);
      
 	}
 QPushButton:pressed {
@@ -1562,7 +1500,7 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">border:none;
 background-color:none;
-color:rgba(255,255,255)</string>
+color:rgb(255,255,255)</string>
          </property>
          <property name="text">
           <string>Draw</string>
@@ -1586,7 +1524,7 @@ color:rgba(255,255,255)</string>
          <property name="styleSheet">
           <string notr="true">border:none;
 background-color:none;
-color:rgba(255,255,255)</string>
+color:rgb(255,255,255)</string>
          </property>
          <property name="text">
           <string>Point</string>
@@ -1633,7 +1571,7 @@ background-color:none;</string>
          <property name="styleSheet">
           <string notr="true">border:none;
 background-color:none;
-color:rgba(255,255,255)</string>
+color:rgb(255,255,255)</string>
          </property>
          <property name="text">
           <string>Zoom Out</string>
@@ -1680,7 +1618,7 @@ background-color:none;</string>
          <property name="styleSheet">
           <string notr="true">border:none;
 background-color:none;
-color:rgba(255,255,255)
+color:rgb(255,255,255)
 </string>
          </property>
          <property name="text">
@@ -2065,6 +2003,97 @@ background-color: rgba(68, 223, 83, 0.52);
         <string/>
        </property>
       </widget>
+      <widget class="QLabel" name="locationCity_label">
+       <property name="geometry">
+        <rect>
+         <x>1021</x>
+         <y>52</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>13</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;</string>
+       </property>
+       <property name="text">
+        <string>Kolkata</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="locationCountry_label">
+       <property name="geometry">
+        <rect>
+         <x>1023</x>
+         <y>79</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;</string>
+       </property>
+       <property name="text">
+        <string>India</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="time_label">
+       <property name="geometry">
+        <rect>
+         <x>1209</x>
+         <y>35</y>
+         <width>161</width>
+         <height>65</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>37</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ffffff;
+</string>
+       </property>
+       <property name="text">
+        <string>10:36</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="imgPreview_label">
+       <property name="geometry">
+        <rect>
+         <x>202</x>
+         <y>202</y>
+         <width>639</width>
+         <height>359</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/img/Images/06_img1.png);
+border-radius: 0px</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="indent">
+        <number>-1</number>
+       </property>
+      </widget>
       <zorder>backgroundTwo_label</zorder>
       <zorder>img2_button</zorder>
       <zorder>logo_widget</zorder>
@@ -2073,9 +2102,7 @@ background-color: rgba(68, 223, 83, 0.52);
       <zorder>img1_button</zorder>
       <zorder>imgFrame1_button</zorder>
       <zorder>imgFrame2_button</zorder>
-      <zorder>timeEdit</zorder>
       <zorder>date_label</zorder>
-      <zorder>imgPreview_widget</zorder>
       <zorder>arrowNextImg_button</zorder>
       <zorder>nextImg_label</zorder>
       <zorder>currentLogCoordinates_widget</zorder>
@@ -2093,7 +2120,6 @@ background-color: rgba(68, 223, 83, 0.52);
       <zorder>currentLog_button</zorder>
       <zorder>currentLog_dropDown_button</zorder>
       <zorder>wifi_widget</zorder>
-      <zorder>location_textBrowser</zorder>
       <zorder>operationsPane_widget</zorder>
       <zorder>counter_label</zorder>
       <zorder>tracker_frame</zorder>
@@ -2109,6 +2135,10 @@ background-color: rgba(68, 223, 83, 0.52);
       <zorder>close_button</zorder>
       <zorder>maximize_restore_button</zorder>
       <zorder>minimize_button</zorder>
+      <zorder>locationCity_label</zorder>
+      <zorder>locationCountry_label</zorder>
+      <zorder>time_label</zorder>
+      <zorder>imgPreview_label</zorder>
      </widget>
     </item>
    </layout>

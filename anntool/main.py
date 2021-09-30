@@ -9,8 +9,13 @@ from datetime import datetime
 from PyQt5.QtCore import QTimer, QTime, Qt
 import glob
 from ui_splash import Ui_SplashScreen
+
 from src.mainwindow import Ui_MainWindow
+
+from src.utils.minmaxclose import *
+
 counter=0
+
 class MainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
@@ -19,9 +24,9 @@ class MainWindow(QMainWindow):
 
         #QtCore.QTimer.singleShot(1500, lambda: self.ui.date_label.setText("<strong>Successful</strong>"))
         #QtCore.QTimer.singleShot(1500, lambda: self.setStyleSheet("background-color: #222; color: #FFF"))
-        self.ui.minimize_button.clicked.connect(self.minimize)
-        self.ui.maximize_restore_button.clicked.connect(self.maximize)
-        self.ui.close_button.clicked.connect(self.close_window)
+
+        UI_Functions.UI_Definition(self)
+
         self.ui.imgPath_dropDown_button.clicked.connect(self.dialog_box)
 
         self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
@@ -33,21 +38,6 @@ class MainWindow(QMainWindow):
         self.date()
         self.showTime()
 
-
-       
-    def close_window(self):
-        self.close()
-
-    def minimize(self):
-        self.showMinimized()
-    
-    def maximize(self):
-        if self.state == 0:
-            self.showMaximized()
-            self.state = 1 
-        else:
-            self.showNormal()
-            self.state = 0
     def date(self):
         
         now = datetime.now()

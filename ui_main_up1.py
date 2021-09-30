@@ -1,6 +1,5 @@
-import sys
+
 from PyQt5 import QtCore, QtWidgets
-from PyQt5.QtGui import QColor
 from PyQt5.QtWidgets import QMainWindow, QGraphicsDropShadowEffect, QApplication
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
 from PyQt5.QtCore import QDate, QTime, QDateTime, Qt
@@ -8,17 +7,14 @@ from datetime import date
 from datetime import datetime
 from PyQt5.QtCore import QTimer, QTime, Qt
 import glob
-from ui_splash import Ui_SplashScreen
+
 from src.mainwindow import Ui_MainWindow
-counter=0
+
 class MainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
-        #QtCore.QTimer.singleShot(1500, lambda: self.ui.date_label.setText("<strong>Successful</strong>"))
-        #QtCore.QTimer.singleShot(1500, lambda: self.setStyleSheet("background-color: #222; color: #FFF"))
         self.ui.minimize_button.clicked.connect(self.minimize)
         self.ui.maximize_restore_button.clicked.connect(self.maximize)
         self.ui.close_button.clicked.connect(self.close_window)
@@ -61,8 +57,8 @@ class MainWindow(QMainWindow):
             self.dat=now.strftime("%drd %B,%Y") 
         else:
             self.dat=now.strftime("%dth %B,%Y")                   
-        _translate = QtCore.QCoreApplication.translate
-        self.ui.date_label.setText(_translate(" ", self.dat))   
+        
+        self.ui.date_label.setText(self.dat)   
 
 
     def showTime(self):
@@ -80,48 +76,14 @@ class MainWindow(QMainWindow):
         a=glob.glob(openfile+"/*.*")
         print(a)
 
-class SplashScreen(QMainWindow):
-    def __init__(self):
-        QMainWindow.__init__(self)
-        self.ui = Ui_SplashScreen()
-        self.ui.setupUi(self)
-        self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
-        self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
+    
 
-        self.shadow = QGraphicsDropShadowEffect(self)
-        self.shadow.setBlurRadius(20)
-        self.shadow.setXOffset(0)
-        self.shadow.setYOffset(0)
-        self.shadow.setColor(QColor(0, 0, 0, 60))
-
-        self.ui.frame.setGraphicsEffect(self.shadow)
-
-        self.timer = QtCore.QTimer()
-        self.timer.timeout.connect(self.progress)
-        self.timer.start(35)
-
-        self.ui.info.setText("Getting Started ....")
-
-        QtCore.QTimer.singleShot(1500, lambda: self.ui.info.setText("Loading assets ..."))
-        QtCore.QTimer.singleShot(3000, lambda: self.ui.info.setText("Starting ..."))
-
-        self.show()
-
-    def progress(self):
-        global counter
-        self.ui.progressBar.setValue(counter)
-        self.ui.ptext.setText(f"{counter} %")
-        if counter > 100:
-            self.timer.stop()
-            self.main = MainWindow()
-            self.main.show()
-            self.close()
-        counter += 1
-
-
-
-
+    
+            
+      
 if __name__ == "__main__":
+    import sys 
     app = QApplication(sys.argv)
-    window = SplashScreen()
-    sys.exit(app.exec())
+    w = MainWindow()
+    w.show()
+    sys.exit(app.exec_())

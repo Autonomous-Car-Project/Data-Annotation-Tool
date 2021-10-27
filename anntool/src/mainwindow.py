@@ -12,6 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 import src.resources.img
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -1084,9 +1085,11 @@ class Ui_MainWindow(object):
         self.time_label.setObjectName("time_label")
         self.imgPreview_label = QtWidgets.QLabel(self.background_widget)
         self.imgPreview_label.setGeometry(QtCore.QRect(202, 202, 639, 359))
-        self.imgPreview_label.setStyleSheet("border-image: url(:/img/Images/06_img1.png);\n"
+        self.imgPreview_label.setStyleSheet("\n"
 "border-radius: 0px")
         self.imgPreview_label.setText("")
+        self.imgPreview_label.setPixmap(QtGui.QPixmap(":/img/Images/06_img1.png"))
+        self.imgPreview_label.setScaledContents(True)
         self.imgPreview_label.setIndent(-1)
         self.imgPreview_label.setObjectName("imgPreview_label")
         self.backgroundTwo_label.raise_()
@@ -1185,6 +1188,7 @@ class Ui_MainWindow(object):
         self.locationCity_label.setText(_translate("MainWindow", "Kolkata"))
         self.locationCountry_label.setText(_translate("MainWindow", "India"))
         self.time_label.setText(_translate("MainWindow", "10:36"))
+
 
 
 if __name__ == "__main__":

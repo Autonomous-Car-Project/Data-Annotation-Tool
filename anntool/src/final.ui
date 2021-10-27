@@ -2084,11 +2084,17 @@ background-color: rgba(68, 223, 83, 0.52);
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-image: url(:/img/Images/06_img1.png);
+        <string notr="true">
 border-radius: 0px</string>
        </property>
        <property name="text">
         <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources/img.qrc">:/img/Images/06_img1.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
        <property name="indent">
         <number>-1</number>

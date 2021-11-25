@@ -11,6 +11,7 @@ import glob
 from ui_splash import Ui_SplashScreen
 from src.mainwindow import Ui_MainWindow
 counter=0
+
 class MainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
@@ -19,10 +20,20 @@ class MainWindow(QMainWindow):
 
         #QtCore.QTimer.singleShot(1500, lambda: self.ui.date_label.setText("<strong>Successful</strong>"))
         #QtCore.QTimer.singleShot(1500, lambda: self.setStyleSheet("background-color: #222; color: #FFF"))
+
+        self.ui.car_button.setEnabled(False)
+        self.ui.animal_button.setEnabled(False)
+        self.ui.person_button.setEnabled(False)
+        self.ui.truck_button.setEnabled(False)
+        self.ui.cycle_button.setEnabled(False)
+        self.ui.trafficSign_button.setEnabled(False)
+
+        self.ui.imgPath_dropDown_button.clicked.connect(self.dialog_box)
+        self.ui.draw_button.clicked.connect(self.draw)
+        self.ui.point_button.clicked.connect(self.point)
         self.ui.minimize_button.clicked.connect(self.minimize)
         self.ui.maximize_restore_button.clicked.connect(self.maximize)
         self.ui.close_button.clicked.connect(self.close_window)
-        self.ui.imgPath_dropDown_button.clicked.connect(self.dialog_box)
 
         self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
@@ -33,8 +44,6 @@ class MainWindow(QMainWindow):
         self.date()
         self.showTime()
 
-
-       
     def close_window(self):
         self.close()
 
@@ -48,6 +57,7 @@ class MainWindow(QMainWindow):
         else:
             self.showNormal()
             self.state = 0
+
     def date(self):
         
         now = datetime.now()
@@ -79,6 +89,26 @@ class MainWindow(QMainWindow):
         print(openfile)
         a=glob.glob(openfile+"/*.*")
         print(a)
+
+    def draw(self):
+        self.ui.imgPreview_label.setCursor(Qt.CrossCursor)
+        self.ui.car_button.setEnabled(True)
+        self.ui.cycle_button.setEnabled(True)
+        self.ui.trafficSign_button.setEnabled(True)
+        self.ui.truck_button.setEnabled(True)
+        self.ui.animal_button.setEnabled(True)
+        self.ui.person_button.setEnabled(True)
+        self.update()
+
+    def point(self):
+        self.ui.imgPreview_label.unsetCursor()
+        self.ui.car_button.setEnabled(False)
+        self.ui.animal_button.setEnabled(False)
+        self.ui.person_button.setEnabled(False)
+        self.ui.truck_button.setEnabled(False)
+        self.ui.cycle_button.setEnabled(False)
+        self.ui.trafficSign_button.setEnabled(False)
+        self.update()
 
 class SplashScreen(QMainWindow):
     def __init__(self):
